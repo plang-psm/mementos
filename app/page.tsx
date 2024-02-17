@@ -28,14 +28,13 @@ export default function Home() {
             <p className='font-extralight py-4 tracking-[.1em]'>
               WEDDINGS • CELEBRATIONS • CORPORATE EVENTS
             </p>
-            <LinkButton 
+            <LinkButton
               bgColor={'#C89A77'}
               textColor={'white'}
               href={'/pricing'}
-            >Book Here</LinkButton>
-            {/* <button className='border border-[#C89A77] p-2 bg-[#C89A77] text-white hover:opacity-70'>
+            >
               Book Here
-            </button> */}
+            </LinkButton>
           </div>
         </div>
       </div>
@@ -58,24 +57,31 @@ export default function Home() {
       </div>
       <div className='background-ad p-4 bg-[#FBF7F3]'>
         {/* <div className='ads'> */}
-          <div className='unlimited-photos'>
-            <div className='image'></div>
-            <div className='content'>
-              <h2 className='text-2xl font-bold uppercase'>Unlimited Digital Photos</h2>
-              <p className=''>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-              <button>Learn More</button>
-            </div>
+        <div className='unlimited-photos'>
+          <div className='image'></div>
+          <div className='content'>
+            <h2 className='text-2xl font-bold uppercase'>
+              Unlimited Digital Photos
+            </h2>
+            <p className=''>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable.
+            </p>
+            <button>Learn More</button>
           </div>
-          <div className='photo-templates'>
-            {' '}
-            <div className='image order-1'></div>
-            <div className='content'>Desc</div>
-          </div>
-          <div className='instant-photos'>
-            {' '}
-            <div className='image'></div>
-            <div className='content'>Desc</div>
-          </div>
+        </div>
+        <div className='photo-templates'>
+          {' '}
+          <div className='image order-1'></div>
+          <div className='content'>Desc</div>
+        </div>
+        <div className='instant-photos'>
+          {' '}
+          <div className='image'></div>
+          <div className='content'>Desc</div>
+        </div>
         {/* </div> */}
       </div>
       <div className='package-guide'></div>

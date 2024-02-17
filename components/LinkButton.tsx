@@ -12,7 +12,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({ bgColor, textColor, href, child
   return (
     <Link href={href}>
       <button
-        className={`border border-[${bgColor}] p-2 bg-[#C89A77] text-${textColor} hover:opacity-70`}
+        className={`border border-[${bgColor}] p-2 bg-[${bgColor}] text-${textColor} hover:opacity-70`}
       >
         {children}
       </button>
