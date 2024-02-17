@@ -2,18 +2,21 @@ import Link from 'next/link';
 import React from 'react';
 
 interface LinkButtonProps {
-  bgColor: string;
-  textColor: string;
-  href: string
+  href: string;
   children: React.ReactNode;
+  onClick?: React.MouseEventHandler;
+  disabled?: boolean;
+  style?: string;
 }
 
-const LinkButton: React.FC<LinkButtonProps> = ({ bgColor, textColor, href, children }: LinkButtonProps) => {
+const LinkButton = ({
+  style,
+  href,
+  children,
+}: LinkButtonProps) => {
   return (
     <Link href={href}>
-      <button
-        className={`border border-[${bgColor}] p-2 bg-[${bgColor}] text-${textColor} hover:opacity-70`}
-      >
+      <button className={style}>
         {children}
       </button>
     </Link>
