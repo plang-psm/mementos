@@ -1,11 +1,22 @@
 import type { Metadata } from 'next';
-import { Inter, Raleway } from 'next/font/google';
+import { Raleway, Dancing_Script, Tangerine } from 'next/font/google';
 import '@styles/globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
-const raleway = Raleway({ subsets: ['latin']})
+// export const raleway = Raleway({ subsets: ['latin']})
+
+const dancingScriot = Tangerine({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-ds',
+})
+const raleway = Raleway({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-rw',
+})
 
 export const metadata: Metadata = {
   title: 'Mementos',
@@ -18,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body className={raleway.className}>
+    <html lang='en' className={`${raleway.variable} ${dancingScriot.variable} font-sans`}>
+      <body>
         <main>
           <Navbar />
           {children}

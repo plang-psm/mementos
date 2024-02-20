@@ -44,12 +44,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='w-full p-4'>
+    <nav className='w-full p-6'>
       {/* Navbar */}
       <div className='flex justify-between'>
         <div className='logo'>
           <Link href={'/'}>
-            <h1 className='logo text-[#B4794D] tracking-[.27em] text-2xl w-100 cursor-pointer uppercase'>Mementos</h1>
+            <h1 className='logo text-[#B4794D] font-bold tracking-[.27em] text-2xl w-100 cursor-pointer uppercase'>Mementos</h1>
           </Link>
         </div>
         {/* Mobile Hamburger menu */}
