@@ -19,15 +19,14 @@ export default function Home() {
               <Image
                 className='m-auto'
                 src={HeaderSvg}
-                width={700}
-                height={700}
+                width={600}
+                height={600}
                 alt='Header image'
                 priority
               />
             </div>
             <div className='content text-center'>
                 <h1 className='text-[#B4794D] text-4xl md:text-6xl font-extrabold uppercase py-4'>#Mementos Photobooth</h1>
-              {/* </h1> */}
               <p className='font-extralight pb-4 tracking-[.1em]'>
                 WEDDINGS • CELEBRATIONS • CORPORATE EVENTS
               </p>
@@ -62,10 +61,10 @@ export default function Home() {
           Now serving the <span className='font-bold'>Los Angeles</span> area
         </p>
         </div>
-        <Image src={Wave} width={100} height={100} alt='wave image' className='w-full h-full p-0 m-0 max-w-[2000px]' />
+        <Image src={Wave} width={100} height={100} alt='wave image' className='w-full h-full p-0 m-0' />
       </div>
       <div className='background-ad py-12 px-6'>
-        <div className='max-w-[1000px] w-full md:mx-auto'>
+        <div className='max-w-[1100px] w-full md:mx-auto'>
         <h2 className=' p-4 text-3xl md:text-5xl  font-extrabold uppercase tracking-[.15em]'>
           Features
         </h2>
@@ -180,7 +179,7 @@ export default function Home() {
       <div className="bg-white">
       <Image src={Wave} width={100} height={100} alt='wave image' className='w-full h-full p-0 m-0 rotate-180' />
 
-      <div className='instagram max-w-[1000px] py-12 px-6 mx-auto'>
+      <div className='instagram max-w-[1100px] py-12 px-6 mx-auto'>
         <div className='profile text-center md:text-start md:flex gap-2'>
           <div className='image'>Img</div>
           <div className='profile-content'>
@@ -188,7 +187,6 @@ export default function Home() {
             <p>100 post 1000 following 10000 followers</p>
             <p>Bio</p>
           </div>
-          {/* <div className="follow max-w-[350px] mx-auto md:mr-0 p-2"></div> */}
           <button className='follow max-w-[350px] mx-auto md:mr-0 p-2'>
             Follow
           </button>
