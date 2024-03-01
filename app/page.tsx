@@ -1,57 +1,50 @@
 import Image from 'next/image';
-import HeaderSvg from '@/public/static/HeaderSvg.svg';
+import HeaderCol from '@/public/static/HeaderCollage.svg';
+import VdayGif from '@/public/static/Vday.gif';
 import PhotoboothSvg from '@/public/static/PhotoboothSvg.svg';
 import InstantPhotosSvg from '@/public/static/InstantPhotosSvg.svg';
-import TemplateSvg from '@/public/static/TemplateSvg.svg';
 import mementoslogo from '@/public/static/mementoslogo.svg';
-import LinkButton from '@components/LinkButton';
-import FooterLine from '@/public/static/FooterLine.svg';
 import BottomWave3 from '@/public/static/BottomWave3.svg';
 import BottomWave4 from '@/public/static/BottomWave4.svg';
 import TopWave1 from '@/public/static/TopWave1.svg';
-import TopWave2 from '@/public/static/TopWave2.svg';
+import LinkButton from '@components/LinkButton';
+import FooterLine from '@/public/static/FooterLine.svg';
 
 export default function Home() {
   return (
     <div className='bg-[#FFF1DB]'>
-      <div className='header w-full px-8'>
-        <div className='background '>
-          <div className='max-w-[1100px] md:mx-auto md:flex md:justify-around md:items-center md:py-40'>
-            <div className='image p-4'>
-              <Image
-                className='m-auto'
-                src={HeaderSvg}
-                width={600}
-                height={600}
-                alt='Header image'
-                priority
-              />
-            </div>
-            <div className='content text-center'>
-              <h1 className='text-[#B4794D] text-4xl md:text-6xl font-extrabold uppercase py-4'>
-                #Mementos Photobooth
-              </h1>
-              <p className='font-extralight pb-4 tracking-[.1em]'>
-                WEDDINGS • CELEBRATIONS • CORPORATE EVENTS
-              </p>
-              <LinkButton
-                style='border p-2 border-2 border-black hover:border-[#B4794D] hover:opacity-70 hover:text-white hover:bg-[#B4794D]'
-                href={'/pricing'}
-              >
-                Book Here
-              </LinkButton>
-            </div>
+      <div className='header'>
+        <div className='max-w-[1900px] grid md:grid-cols-2 content-center md:lg-screen'>
+          <div className='image h-[50%] md:h-full'>
+            <Image
+              className=' md:h-full object-cover'
+              src={HeaderCol}
+              width={1000}
+              height={1000}
+              alt='Header image'
+              priority
+            />
+          </div>
+          <div className='content text-center h-100 m-auto py-6'>
+            <h1 className='text-[#B4794D] text-4xl md:text-5xl lg:text-7xl font-extrabold uppercase md:pb-4'>
+              #Mementos Photobooth
+            </h1>
+            <p className='font-extralight pb-4 tracking-[.1em]'>
+              WEDDINGS • CELEBRATIONS • CORPORATE EVENTS
+            </p>
+            <LinkButton
+              style='border p-2 border-2 border-black hover:border-[#B4794D] hover:opacity-70 hover:text-white hover:bg-[#B4794D]'
+              href={'/pricing'}
+            >
+              Book Here
+            </LinkButton>
           </div>
         </div>
       </div>
-      <div className='header w-full flex flex-col items-center text-center justify-center md:mx-auto bg-white'>
-        <Image
-          src={TopWave2}
-          width={100}
-          height={100}
-          alt='wave image'
-          className='w-full h-full p-0 m-0'
-        />
+      <div
+        className={`header 
+      w-full flex flex-col items-center text-center justify-center md:mx-auto bg-white`}
+      >
         <div className='py-12 md:my-20 px-6'>
           <h2 className='text-3xl md:text-4xl font-extrabold uppercase tracking-[.15em]'>
             Our Promise
@@ -91,7 +84,7 @@ export default function Home() {
             <div className='image order-2'>
               <Image
                 src={PhotoboothSvg}
-                className='m-auto p-4 min-w-[330px]'
+                className='m-auto p-4 h-[415px] min-w-[330px]'
                 width={400}
                 height={400}
                 alt='Photobooth image'
@@ -124,14 +117,13 @@ export default function Home() {
             className='mx-auto py-8 md:py-20'
             alt='Image of line break'
           />
-
           <div className='photo-templates md:mx-auto md:flex md:justify-between md:items-center'>
             <div className='image'>
               <Image
-                src={TemplateSvg}
-                className='m-auto p-4 min-w-[330px]'
+                src={VdayGif}
+                className='m-auto p-4 w-100 h-[415px] object-cover object-center min-w-[330px]'
                 width={400}
-                height={400}
+                height={415}
                 alt='Photobooth image'
                 priority
               />
@@ -162,12 +154,11 @@ export default function Home() {
             className='mx-auto py-8 md:py-20'
             alt='Image of line break'
           />
-
           <div className='instant-photos md:mx-auto md:flex md:justify-between md:items-center'>
             <div className='image order-2'>
               <Image
                 src={InstantPhotosSvg}
-                className='m-auto p-4 min-w-[330px]'
+                className='m-auto p-4 h-[415px] min-w-[330px]'
                 width={400}
                 height={400}
                 alt='Photobooth image'
@@ -194,7 +185,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className='bg-white'>
         <Image
           src={TopWave1}
@@ -203,7 +193,6 @@ export default function Home() {
           alt='wave image'
           className='w-full h-full p-0 m-0'
         />
-
         <div className='instagram max-w-[1100px] py-12 px-6 mx-auto'>
           <div className='profile text-center md:text-start flex flex-col md:flex-row md:items-start md:gap-4'>
             <div className='image md:'>
