@@ -1,4 +1,6 @@
 import type { Config } from 'tailwindcss';
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 
 const config: Config = {
   content: [
@@ -7,6 +9,10 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'sm-md': '650px',
+      ...defaultTheme.screens,
+    },
     fontFamily: {
       rw: ['var(--font-raleway)'],
     },
