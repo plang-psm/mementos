@@ -2,7 +2,7 @@ const AdData = [
   {
     img: '/static/SBImg.png',
     heading: 'Celebrate Sports',
-    desc: ' Capturing Athletic Spirit in Every Snap! Step into our sports-themed photo booth & celebrate your teams victories 📸🏆',
+    desc: 'Capturing Athletic Spirit in Every Snap! Step into our sports-themed photo booth & celebrate your teams victories 📸🏆',
   },
   {
     img: '/static/GalentinesImg.png',
