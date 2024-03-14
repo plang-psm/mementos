@@ -4,11 +4,11 @@ import Image from 'next/image';
 import BottomWave4 from '@public/static/BottomWave4.svg';
 import LinkButton from '@components/LinkButton';
 import AdData from '@data/AdData';
-import IconData from '@data/IconData';
-import PricingData from '@data/PricingData';
 import ADList from '@components/ADList';
 import FeaturedList from '@components/FeaturedList';
 import PricingList from '@components/PricingList';
+import FeatureData from '@data/FeatureData';
+import PricingData from '@data/PricingData';
 import AddOnList from '@components/AddOnList';
 import AddOnData from '@data/AddOnData';
 
@@ -51,7 +51,7 @@ const products = () => {
         </h2>
         <div className='mx-auto text-center px-6'>
           <div className='features sm-md:flex sm-md:flex-wrap md:flex-row w-full justify-center mx-auto'>
-            {IconData.map(({ img, heading, desc }, index) => {
+            {FeatureData.map(({ img, heading, desc }, index) => {
               return (
                 <FeaturedList
                   key={index}

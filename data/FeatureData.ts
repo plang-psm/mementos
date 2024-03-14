@@ -1,4 +1,4 @@
-const IconData = [
+const FeatureData = [
   {
     img: '/static/smilesvg.svg',
     heading: 'Easy to use',
@@ -31,4 +31,4 @@ const IconData = [
   },
 ];
 
-export default IconData;
+export default FeatureData;
