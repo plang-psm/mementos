@@ -24,8 +24,8 @@ const Navbar = () => {
     },
     {
       index: 2,
-      label: 'Pricing',
-      link: '/pricing',
+      label: 'Products',
+      link: '/products',
     },
     {
       index: 3,
@@ -77,8 +77,8 @@ const Navbar = () => {
               </li>
             ))}
             <LinkButton
-              style='border p-2 border-2 border-black hover:border-[#B4794D] hover:opacity-70 hover:text-white hover:bg-[#B4794D]'
-              href='/'
+            style='border p-2 px-4 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
+            href='/'
             >
               Book
             </LinkButton>
@@ -121,8 +121,8 @@ const Navbar = () => {
             </li>
           ))}
           <LinkButton
-            style='my-8 border p-2 border-2 border-black hover:border-[#B4794D] hover:opacity-70 hover:text-white hover:bg-[#B4794D]'
-            href='/'
+                style='my-8 border p-2 px-4 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
+                href='/'
           >
             Book
           </LinkButton>

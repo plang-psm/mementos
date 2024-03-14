@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <div className='bg-[#FFF1DB]'>
       <div className='header'>
-        <div className='max-w-[1900px] grid md:grid-cols-2 content-center md:lg-screen'>
+        <div className='max-w-[1900px] grid md:grid-cols-2 content-center'>
           <div className='image h-[50%] md:h-full'>
             <Image
-              className=' md:h-full object-cover'
+              className='object-cover'
               src={HeaderCol}
               width={1000}
               height={1000}
@@ -26,15 +26,15 @@ export default function Home() {
             />
           </div>
           <div className='content text-center h-100 m-auto py-6'>
-            <h1 className='text-[#B4794D] text-4xl md:text-5xl lg:text-7xl font-extrabold uppercase md:pb-4'>
+            <h1 className='text-[#B4794D] text-4xl md:text-5xl lg:text-7xl font-extrabold uppercase pb-4'>
               #Mementos Photobooth
             </h1>
-            <p className='font-extralight pb-4 tracking-[.1em]'>
+            <p className='font-extralight pb-6 tracking-[.1em]'>
               WEDDINGS • CELEBRATIONS • CORPORATE EVENTS
             </p>
             <LinkButton
-              style='border p-2 border-2 border-black hover:border-[#B4794D] hover:opacity-70 hover:text-white hover:bg-[#B4794D]'
-              href={'/pricing'}
+              style='border p-2 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
+              href={'/products'}
             >
               Book Here
             </LinkButton>
@@ -102,8 +102,8 @@ export default function Home() {
                 slightly believable.
               </p>
               <LinkButton
-                style='border p-2 border-2 border-black hover:border-[#B4794D] hover:opacity-70 hover:text-white hover:bg-[#B4794D]'
-                href={'/pricing'}
+                style='border p-2 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
+                href={'/products'}
               >
                 Learn More
               </LinkButton>
@@ -139,8 +139,8 @@ export default function Home() {
                 slightly believable.
               </p>
               <LinkButton
-                style='border p-2 border-2 border-black hover:border-[#B4794D] hover:opacity-70 hover:text-white hover:bg-[#B4794D]'
-                href={'/pricing'}
+                style='border p-2 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
+                href={'/products'}
               >
                 Learn More
               </LinkButton>
@@ -176,8 +176,8 @@ export default function Home() {
                 slightly believable.
               </p>
               <LinkButton
-                style='border p-2 border-2 border-black hover:border-[#B4794D] hover:opacity-70 hover:text-white hover:bg-[#B4794D]'
-                href={'/pricing'}
+                style='border p-2 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
+                href={'/products'}
               >
                 Learn More
               </LinkButton>
@@ -278,7 +278,7 @@ export default function Home() {
           <div className='w-full flex justify-center'>
             <LinkButton
               href='/gallery'
-              style='border p-2 border-2 border-black hover:border-[#B4794D] hover:opacity-70 hover:text-white hover:bg-[#B4794D]'
+              style='border p-2 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
             >
               Show more
             </LinkButton>
@@ -291,10 +291,6 @@ export default function Home() {
           alt='wave image'
           className='w-full h-full p-0 m-0'
         />
-      </div>
-      <div className='contact bg-[#FBF7F3]'>
-        <div className='image'></div>
-        <div className='contact-form'></div>
       </div>
     </div>
   );
