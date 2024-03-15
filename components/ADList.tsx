@@ -14,7 +14,7 @@ const ADList = ({ img, heading, desc }: MediaDataType, index: number) => {
           <img
             src={img}
             alt={`${heading} image`}
-            className='h-[450px] md:h-[700px] object-cover w-full'
+            className='h-[550px] object-cover w-full'
           />
           <div className='absolute p-6 h-[175px] sm-md:h-[190px] md:h-[255px] bottom-0 left-0 right-0 text-white'>
             <h2 className='font-extrabold text-lg md:text-2xl py-2 uppercase'>

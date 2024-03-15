@@ -15,8 +15,8 @@ const PricingList = (
   index: number
 ) => {
   return (
-    <div className='premium max-w-[350px] w-full px-8 py-4 border-4' key={index}>
-      <div className='header px-12 py-4 border-b-4 text-center'>
+    <div className='premium max-w-[425px] w-full px-8 py-4 border-2 rounded-2xl' key={index}>
+      <div className='header px-12 py-4 border-b-2 border-black text-center'>
         <h3 className='text-2xl uppercase font-semibold'>{heading}</h3>
         <p className='text-xl md:text-xl font-light'>${pricing}</p>
       </div>

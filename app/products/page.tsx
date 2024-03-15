@@ -1,10 +1,8 @@
 import React from 'react';
 import ThreePB from '@public/static/Three-pb.svg';
 import Image from 'next/image';
-import BottomWave4 from '@public/static/BottomWave4.svg';
+import BottomWave3 from '@public/static/BottomWave3.svg';
 import LinkButton from '@components/LinkButton';
-import AdData from '@data/AdData';
-import ADList from '@components/ADList';
 import FeaturedList from '@components/FeaturedList';
 import PricingList from '@components/PricingList';
 import FeatureData from '@data/FeatureData';
@@ -39,36 +37,12 @@ const products = () => {
           </LinkButton>
         </div>
       </div>
-
-      <div className='max-w-[1300px] px-6 mx-auto flex flex-row md:justify-center flex-wrap lg:flex-nowrap pb-12 pt-32 gap-4 w-full h-full text-center'>
-        {AdData.map(({ img, heading, desc }, index) => {
-          return <ADList key={index} img={img} heading={heading} desc={desc} />;
-        })}
-      </div>
-      <div className='feature-container py-6 md:py-12 tracking-[.15em] max-w-[1000px] w-full mx-auto'>
-        <h2 className='text-3xl md:text-4xl font-extrabold uppercase pb-6 md:pb-12 text-center'>
-          whats included
+      <div className='feature-container max-w-[1300px] md:py-12 md:pt-24 tracking-[.15em] mx-auto'>
+        <h2 className='text-3xl md:text-4xl font-extrabold uppercase text-center pb-4'>
+          Discover Our Packages
         </h2>
-        <div className='mx-auto text-center px-6'>
-          <div className='features sm-md:flex sm-md:flex-wrap md:flex-row w-full justify-center mx-auto'>
-            {FeatureData.map(({ img, heading, desc }, index) => {
-              return (
-                <FeaturedList
-                  key={index}
-                  img={img}
-                  heading={heading}
-                  desc={desc}
-                />
-              );
-            })}
-          </div>
-        </div>
-      </div>
-      <div className='feature-container py-6 md:py-12 tracking-[.15em] max-w-[1000px] mx-auto'>
-        <h2 className='text-3xl md:text-4xl font-extrabold uppercase pb-6 md:pb-12 text-center'>
-          Packages
-        </h2>
-        <div className='flex flex-col gap-10 justify-center items-center md:gap-0 md:flex-row md:justify-around px-6'>
+        <p className='text-center max-w-[1000px] mx-auto pb-4'>At Mementos Photobooth Rental, we offer a range of packages to suit every event and budget. Whether you're planning an intimate gathering or a large-scale celebration, we have the perfect package for you:</p>
+        <div className='flex flex-col gap-10 justify-center items-center md:gap-8 md:flex-row md:justify-around px-6 p-10 rounded-2xl'>
           {PricingData.map(({ heading, pricing, desc, buttonLink }, index) => {
             return (
               <PricingList
@@ -82,11 +56,36 @@ const products = () => {
           })}
         </div>
       </div>
-      <div className='add ons px-6 py-6 md:py-12 max-w-[1000px] mx-auto'>
-        <h2 className='text-3xl md:text-4xl font-extrabold uppercase pb-6 md:pb-12 text-center'>
-          Add ons
-        </h2>
-        <div className='flex flex-col md:flex-row gap-10 h-full text-center mx-auto'>
+      <div className=''>
+        <div className='feature-container max-w-[1300px] py-6  tracking-[.15em] w-full mx-auto '>
+          <h2 className='text-3xl md:text-4xl font-extrabold uppercase pb-6 md:pb-12 text-center'>
+            whats included
+          </h2>
+          <div className='mx-auto text-center px-6'>
+            <div className='features sm-md:flex sm-md:flex-wrap md:flex-row w-full justify-center mx-auto'>
+              {FeatureData.map(({ img, heading, desc }, index) => {
+                return (
+                  <FeaturedList
+                    key={index}
+                    img={img}
+                    heading={heading}
+                    desc={desc}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='add ons max-w-[1300px] px-6 pt-6 md:pt-12 pb-36 mx-auto'>
+        <div className='flex items-center pb-6 md:pb-24'>
+          <hr className='flex-grow h-[2px] bg-gray-700' />
+          <span className='text-3xl md:text-4xl font-extrabold uppercase px-4 text-center'>
+            Add ons
+          </span>
+          <hr className='flex-grow h-[2px] bg-gray-700' />
+        </div>
+        <div className='flex flex-col gap-10 md:gap-8 md:flex-row h-full text-center mx-auto'>
           {AddOnData.map(({ img, heading, desc }, index) => {
             return (
               <AddOnList key={index} img={img} heading={heading} desc={desc} />
@@ -94,13 +93,6 @@ const products = () => {
           })}
         </div>
       </div>
-      <Image
-        src={BottomWave4}
-        width={100}
-        height={100}
-        alt='wave image'
-        className='w-full h-full p-0 m-0'
-      />
     </>
   );
 };

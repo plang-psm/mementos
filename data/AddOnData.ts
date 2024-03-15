@@ -5,7 +5,7 @@ const AddOnData = [
     desc: '+$100 per/hr',
   },
   {
-    img: '/static/backdropsvg.svg',
+    img: '/static/supportsvg.svg',
     heading: 'ONSITE ASSISTANCE',
     desc: '+$75 per/hr',
   },
