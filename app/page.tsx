@@ -52,9 +52,6 @@ export default function Home() {
           <h2 className='text-3xl md:text-4xl font-extrabold uppercase tracking-[.15em]'>
             Bienvenidos
           </h2>
-          {/* <h3 className='text-2xl font-semibold uppercase py-2 tracking-[.27em]'>
-            Simple. Fast. Effective.
-          </h3> */}
           <p className='py-2 md:text-lg max-w-[1200px] tracking-[.05em] mx-auto'>
             Here at Mementos, we promise an experience that blends authenticity,
             warmth, and excitement. Whether it's a wedding, quinceañera,
