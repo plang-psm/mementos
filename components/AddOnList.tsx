@@ -9,10 +9,10 @@ type MediaDataType = {
 const AddOnList = ({ img, heading, desc }: MediaDataType, index: number) => {
   return (
     <div
-      className='extra-time p-4 border-4 max-w-[350px] mx-auto w-full'
+      className='max-w-[350px] mx-auto w-full border-2 rounded-2xl'
       key={index}
     >
-      <div className='w-full h-full flex flex-col justify-center items-center'>
+      <div className='w-full h-full flex flex-col justify-center items-center p-10'>
         <div className='max-w-[75px] max-h-[75px]'>
           <img src={img} alt={`${heading} image`} className='h-[75px]' />
         </div>

@@ -2,12 +2,12 @@ const FeatureData = [
   {
     img: '/static/smilesvg.svg',
     heading: 'Easy to use',
-    desc: 'Quick & Easy & Setup',
+    desc: 'Quick & Easy Setup',
   },
   {
     img: '/static/infinitysvg.svg',
     heading: 'Unlimited',
-    desc: 'Photos, GIFs, etc.',
+    desc: 'Digital Photos',
   },
   {
     img: '/static/boltsvg.svg',
@@ -20,9 +20,24 @@ const FeatureData = [
     desc: 'At Your Request',
   },
   {
-    img: '/static/supportsvg.svg',
-    heading: 'Onsite assistance',
-    desc: 'At Your Request',
+    img: '/static/PBStem.svg',
+    heading: 'Tap To Start',
+    desc: 'Just Tap',
+  },
+  {
+    img: '/static/backdropsvg.svg',
+    heading: 'Basic Backdrop',
+    desc: 'Background Covered',
+  },
+  {
+    img: '/static/GIF.svg',
+    heading: 'GIFs',
+    desc: 'Make It A GIF',
+  },
+  {
+    img: '/static/Quality.svg',
+    heading: 'High Quality',
+    desc: 'Nothing But The Best',
   },
   {
     img: '/static/custsatsvg.svg',
