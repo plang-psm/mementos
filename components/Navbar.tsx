@@ -1,48 +1,44 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { TfiClose } from 'react-icons/tfi';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { usePathname } from 'next/navigation';
 import LinkButton from './LinkButton';
+import LINK_ARR from '@data/LinkArr';
 
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
   const pathname = usePathname();
 
-  // Dynamic link array
-  const LINK_ARR = [
-    {
-      index: 0,
-      label: 'Home',
-      link: '/',
-    },
-    {
-      index: 1,
-      label: 'About',
-      link: '/about',
-    },
-    {
-      index: 2,
-      label: 'Products',
-      link: '/products',
-    },
-    {
-      index: 3,
-      label: 'Gallery',
-      link: '/gallery',
-    },
-    {
-      index: 4,
-      label: 'Contact',
-      link: '/#contact',
-    },
-  ];
-
   // Handler to toggle opening and hiding the nav menu in mobile.
   const handleNav = () => {
     setOpenNav(!openNav);
   };
+
+  // Function that handles resize at 768px
+  const handleResize = () => {
+    if (window.innerWidth >= 768) {
+      setOpenNav(false);
+    }
+  };
+
+  useEffect(() => {
+    // Set up event listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up event lister
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Handles overflow based on navs state
+    openNav
+      ? (document.body.style.overflow = 'hidden')
+      : (document.body.style.overflow = 'auto');
+  }, [openNav]);
 
   return (
     <nav className='w-full p-6'>
@@ -77,8 +73,8 @@ const Navbar = () => {
               </li>
             ))}
             <LinkButton
-            style='border p-2 px-4 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
-            href='/'
+              style='border p-2 px-4 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
+              href='/'
             >
               Book
             </LinkButton>
@@ -121,8 +117,8 @@ const Navbar = () => {
             </li>
           ))}
           <LinkButton
-                style='my-8 border p-2 px-4 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
-                href='/'
+            style='my-8 border p-2 px-4 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
+            href='/'
           >
             Book
           </LinkButton>
