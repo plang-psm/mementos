@@ -20,7 +20,7 @@ const FeatureData = [
     desc: 'At Your Request',
   },
   {
-    img: '/static/PBStem.svg',
+    img: '/static/PBFace.svg',
     heading: 'Tap To Start',
     desc: 'Just Tap',
   },
