@@ -1,44 +1,24 @@
 import React from 'react';
 import Image from 'next/image';
-import mementoslogo from '@/public/static/mementoslogo.svg';
-import InstantPhotosSvg from '@/public/static/InstantPhotosSvg.svg';
-import LinkButton from '../../components/LinkButton';
-
-type MediaType = {
-  media_url: string;
-  id: number;
-};
-
-type MediaDataType = {
-  data: MediaType[];
-};
-
-export const getInstagramMedia = async () => {
-  const url = `https://graph.instagram.com/me/media?fields=media_url&access_token=${process.env.INSTAGRAM_KEY}`;
-  const res = await fetch(url);
-
-  if (!res.ok) {
-    throw new Error('Failed to fetch instagram media');
-  } else {
-    return res.json();
-  }
-};
+import GalleryData from '@data/GalleryData';
 
 const GalleryPageList = async () => {
-  const media: MediaDataType = await getInstagramMedia();
-
   return (
     <>
-      {media.data.map(({ media_url, id }: MediaType) => (
-        <div className='image' key={id}>
-          <img
-            src={media_url}
-            className='m-auto w-[300px] h-[200px] object-cover'
-            alt='Photobooth image'
+      {GalleryData.map(({ img, alt }, index: number) => (
+        <div className='image overflow-hidden' key={index}>
+          <Image
+            src={img}
+            width={0}
+            height={250}
+            className='w-full h-[250px] object-cover transition-transform transform hover:scale-95 duration-300 ease-in-out'
+            alt={alt}
           />
         </div>
       ))}
-      {media.data.length === 0 && <p>No images found</p>}
+      {GalleryData.length === 0 && (
+        <p className='mx-auto col-start-2'>Error: No images found</p>
+      )}
     </>
   );
 };
