@@ -3,7 +3,6 @@ import HeaderCollage from '@/public/static/HeaderCollage.svg';
 import VdayGif from '@/public/static/Vday.gif';
 import CustomTemplate from '@/public/static/CustomTemplate.svg';
 import PhotoboothSvg from '@/public/static/PhotoboothSvg.svg';
-import InstantPhotosSvg from '@/public/static/InstantPhotosSvg.svg';
 import mementoslogo from '@/public/static/mementoslogo.svg';
 import BottomWave3 from '@/public/static/BottomWave3.svg';
 import LinkButton from '@components/LinkButton';
@@ -35,8 +34,8 @@ export default function Home() {
                 WEDDINGS • CELEBRATIONS • CORPORATE EVENTS
               </p>
               <LinkButton
-            style='uppercase border py-2 px-6 hover:border-2 hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
-            href={'/products'}
+                style='uppercase border py-2 px-6 hover:border-2 hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
+                href={'/products'}
               >
                 Book Here
               </LinkButton>
@@ -200,97 +199,6 @@ export default function Home() {
           alt='wave image'
           className='w-full h-full p-0 m-0 rotate-180'
         />
-        <div className='instagram max-w-[1100px] py-24 px-6 mx-auto'>
-          <div className='profile text-center md:text-start flex flex-col md:flex-row md:items-start md:gap-4'>
-            <div className='image md:'>
-              <Image
-                src={mementoslogo}
-                width={150}
-                height={150}
-                alt='Mementos logo images'
-                className='mx-auto'
-              />
-            </div>
-            <div className='profile-content pb-2 md:py-2'>
-              <p className='text-2xl'>@mementosbooth</p>
-              <p className='py-2'>11 Posts 116 Followers 224 Following</p>
-              <p>Bio</p>
-            </div>
-            <button className='follow my-2 border max-w-[350px] mx-auto md:mr-0 p-2'>
-              Follow
-            </button>
-          </div>
-          <div className='grid-images py-4 grid grid-cols-2 md:grid-cols-3 grid-flow-row gap-8'>
-            <div className='image'>
-              <Image
-                src={InstantPhotosSvg}
-                className='m-auto'
-                width={350}
-                height={350}
-                alt='Photobooth image'
-                priority
-              />
-            </div>
-            <div className='image'>
-              <Image
-                src={InstantPhotosSvg}
-                className='m-auto'
-                width={350}
-                height={350}
-                alt='Photobooth image'
-                priority
-              />
-            </div>
-            <div className='image'>
-              <Image
-                src={InstantPhotosSvg}
-                className='m-auto'
-                width={350}
-                height={350}
-                alt='Photobooth image'
-                priority
-              />
-            </div>
-            <div className='image'>
-              <Image
-                src={InstantPhotosSvg}
-                className='m-auto'
-                width={350}
-                height={350}
-                alt='Photobooth image'
-                priority
-              />
-            </div>
-            <div className='image'>
-              <Image
-                src={InstantPhotosSvg}
-                className='m-auto'
-                width={350}
-                height={350}
-                alt='Photobooth image'
-                priority
-              />
-            </div>
-            <div className='image'>
-              <Image
-                src={InstantPhotosSvg}
-                className='m-auto'
-                width={350}
-                height={350}
-                alt='Photobooth image'
-                priority
-              />
-            </div>
-          </div>
-          <div className='w-full flex justify-center'>
-            <LinkButton
-              href='/gallery'
-              style='border p-2 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
-            >
-              Show more
-            </LinkButton>
-          </div>
-        </div>
       </div>
     </div>
   );
