@@ -3,16 +3,12 @@ import HeaderCollage from '@/public/static/HeaderCollage.svg';
 import VdayGif from '@/public/static/Vday.gif';
 import CustomTemplate from '@/public/static/CustomTemplate.svg';
 import PhotoboothSvg from '@/public/static/PhotoboothSvg.svg';
-import InstantPhotosSvg from '@/public/static/InstantPhotosSvg.svg';
 import mementoslogo from '@/public/static/mementoslogo.svg';
 import BottomWave3 from '@/public/static/BottomWave3.svg';
 import LinkButton from '@components/LinkButton';
 import FooterLine from '@/public/static/FooterLine.svg';
 import AdData from '@data/AdData';
 import ADList from '@components/ADList';
-import GalleryPageList from './gallery/GalleryPageList';
-import GalleryHomeList from '@components/GalleryHomeList ';
-// import GalleryList from '@app/gallery/GalleryList';
 
 export default function Home() {
   return (
@@ -203,43 +199,6 @@ export default function Home() {
           alt='wave image'
           className='w-full h-full p-0 m-0 rotate-180'
         />
-        <div className='instagram max-w-[1100px] py-24 px-6 mx-auto'>
-          <div className='profile text-center md:text-start flex flex-col md:flex-row md:items-start md:gap-4'>
-            <div className='image md:'>
-              <Image
-                src={mementoslogo}
-                width={150}
-                height={150}
-                alt='Mementos logo images'
-                className='mx-auto'
-              />
-            </div>
-            <div className='profile-content pb-2 md:py-2'>
-              <p className='text-2xl'>@mementosbooth</p>
-              {/* <p className='py-2'>11 Posts 116 Followers 224 Following</p> */}
-              <p>
-                {' '}
-                Weddings • Celebrations • Corporate Events <br /> 📸✨ Quality
-                Digital Booth Photos 📸✨ <br /> BOOKING NOW FOR MARCH -JULY
-                2024 DM US📲💌
-              </p>
-            </div>
-            <button className='follow my-2 border max-w-[350px] mx-auto md:mr-0 p-2'>
-              Follow
-            </button>
-          </div>
-          <div className='grid-images py-4 grid grid-cols-2 md:grid-cols-3 grid-flow-row gap-8'>
-            <GalleryHomeList />
-          </div>
-          <div className='mx-auto text-center'>
-            <LinkButton
-              style='border p-2 hover:border-2  hover:border-[#B4794D] hover:opacity-50 text-white bg-[#B4794D]'
-              href={'/gallery'}
-            >
-              Show More
-            </LinkButton>
-          </div>
-        </div>
       </div>
     </div>
   );

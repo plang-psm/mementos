@@ -3,7 +3,7 @@ import Image from 'next/image';
 import mementoslogo from '@/public/static/mementoslogo.svg';
 import LinkButton from '../../components/LinkButton';
 
-import GalleryPageList from './GalleryPageList';
+import GalleryList from './GalleryList';
 
 const gallery = () => {
   return (
@@ -35,7 +35,7 @@ const gallery = () => {
           </LinkButton>
         </div>
         <div className='grid-images py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 max-w-[950px] m-auto'>
-          <GalleryPageList />
+          <GalleryList />
         </div>
       </div>
     </>
