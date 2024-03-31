@@ -1,75 +1,92 @@
 import React from 'react';
+import Image from 'next/image';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { FaRegClock } from 'react-icons/fa';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaRegEnvelope } from 'react-icons/fa';
-import Contact from './Contact';
+import Logo from '@public/static/Logo.svg';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className=' w-100 bg-[#FFF1DB] py-12 md:py-24'>
-      <div className=''>
-        <p className='text-[#B4794D] text-3xl md:text-4xl font-bold tracking-[.1em] uppercase py-4 text-center'>
-          Mementos Photobooth
-        </p>
-      </div>
-      <div className='max-w-[1100px] text-center px-6 flex flex-col md:flex-row items-center md:items-start justify-between mx-auto'>
-        <div className=''>
-          <ul className='socials text-start font-light text-md py-4 max-w-[350px] '>
-            <li className='py-2'>
-              <div className=' flex gap-4 items-center uppercase'>
+    <>
+      <div className='w-full bg-black text-white py-24'>
+        <div className='footer-container max-w-[1100px] px-6 uppercase md:flex justify-between mx-auto font-light'>
+          <div className='logo-socials pb-12 md:pb-0'>
+            <div className='logo mx-auto pb-12'>
+              <Image
+                src={Logo}
+                width={250}
+                height={250}
+                alt='Logo image'
+                className='mx-auto'
+              />
+            </div>
+            <div className='socials max-w-[250px] mx-auto flex justify-between'>
+              <p>Temp</p>
+              <p>Temp</p>
+              <p>Temp</p>
+            </div>
+          </div>
+          <div className='navigation text-center pb-12 md:pb-0 flex flex-col gap-4'>
+            <h3 className='font-extrabold text-xl'>Menu</h3>
+            <Link href={'/'} className='hover:opacity-70'>
+              Home
+            </Link>
+            <Link href={'/about'} className='hover:opacity-70'>
+              About
+            </Link>
+            <Link href={'/products'} className='hover:opacity-70'>
+              Product
+            </Link>
+            <Link href={'/gallery'} className='hover:opacity-70'>
+              Gallery
+            </Link>
+            <Link href={'/'} className='hover:opacity-70'>
+              Contact
+            </Link>
+          </div>
+          <div className='contact-location pb-12 md:pb-0 text-center md:text-start'>
+            <div className='contact flex flex-col gap-4 pb-12'>
+              <h3 className='font-extrabold text-xl'>Contact</h3>
+              <div className=' flex gap-2 justify-center md:justify-start content-center items-center uppercase'>
                 <FaPhoneAlt className='inline-block' size={25} />
                 <div className=''>
-                  <p className='font-bold'>Phone</p>
                   <p className='font-thin'>(555)555-5555</p>
                 </div>
               </div>
-            </li>
-            <li className='py-2'>
-              <div className=' flex gap-4 content-center items-center uppercase'>
+              <div className=' flex gap-2 justify-center md:justify-start content-center items-center uppercase'>
                 <FaRegEnvelope className='inline-block' size={25} />
                 <div className=''>
-                  <p className='font-bold'>Email</p>
                   <p className='font-thin'>Mementos@gmail.com</p>
                 </div>
               </div>
-            </li>
-            <li className='py-2'>
-              <div className=' flex gap-4 content-center items-center uppercase'>
+            </div>
+            <div className='location flex flex-col gap-4'>
+              <h3 className='font-extrabold text-xl'>Locations</h3>
+              <div className=' flex gap-2 justify-center md:justify-start content-center items-center uppercase'>
                 <FaMapMarkerAlt className='inline-block' size={25} />
                 <div className=''>
-                  <p className='font-bold'>Location</p>
                   <p className='font-thin'>Los Angeles, CA</p>
                 </div>
               </div>
-            </li>
-            <li className='py-2'>
-              <div className=' flex gap-4 content-center items-center uppercase'>
+              <div className=' flex gap-2 justify-center md:justify-start content-center items-center uppercase'>
                 <FaRegClock className='inline-block' size={25} />
                 <div className=''>
-                  <p className='font-bold'>time</p>
-                  <p className='font-thin'>Monday-Sunday 8AM - 5PM</p>
+                  <p className='font-thin'>Mon - Sun 8AM - 5PM</p>
                 </div>
               </div>
-            </li>
-          </ul>
-          <div className='flex gap-4'>
-            <p>Follow us</p>
-            <ul className='flex gap-4'>
-              <li>insta</li>
-              <li>face</li>
-              <li>yelp</li>
-            </ul>
+            </div>
           </div>
         </div>
-        <div className=''>
-          <Contact />
-        </div>
+        <p className='pt-24 px-10 text-center tracking-[.1em] font-light'>
+          Designed and developed by{' '}
+          <a href={'https://www.psicode.dev/'} className='hover:opacity-70' rel='noopener noreferrer' target='_blank'>
+            <span className='font-extrabold'>PLANG-PSM</span>
+          </a>
+        </p>
       </div>
-      <p className='py-20 tracking-widest text-center'>
-        Designed and developed by <span className='font-bold'>plang-psm</span>
-      </p>
-    </div>
+    </>
   );
 };
 

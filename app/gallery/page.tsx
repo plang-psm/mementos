@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import mementoslogo from '@/public/static/mementoslogo.svg';
+import Logo from '@/public/static/logo.svg';
 import LinkButton from '../../components/LinkButton';
 
 import GalleryList from './GalleryList';
@@ -12,7 +12,7 @@ const gallery = () => {
         <div className='profile text-center flex flex-col gap-4'>
           <div className='image'>
             <Image
-              src={mementoslogo}
+              src={Logo}
               width={150}
               height={150}
               alt='Mementos logo images'
