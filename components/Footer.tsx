@@ -81,9 +81,9 @@ const Footer = () => {
         </div>
         <p className='pt-24 px-10 text-center tracking-[.1em] font-light'>
           Designed and developed by{' '}
-          <Link href={'www.psicode.dev'} className='hover:opacity-70'>
+          <a href={'https://www.psicode.dev/'} className='hover:opacity-70' rel='noopener noreferrer' target='_blank'>
             <span className='font-extrabold'>PLANG-PSM</span>
-          </Link>
+          </a>
         </p>
       </div>
     </>
