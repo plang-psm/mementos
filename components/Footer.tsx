@@ -30,11 +30,21 @@ const Footer = () => {
           </div>
           <div className='navigation text-center pb-12 md:pb-0 flex flex-col gap-4'>
             <h3 className='font-extrabold text-xl'>Menu</h3>
-            <Link href={'/'}>Home</Link>
-            <Link href={'/about'}>About</Link>
-            <Link href={'/products'}>Product</Link>
-            <Link href={'/gallery'}>Gallery</Link>
-            <Link href={'/'}>Contact</Link>
+            <Link href={'/'} className='hover:opacity-70'>
+              Home
+            </Link>
+            <Link href={'/about'} className='hover:opacity-70'>
+              About
+            </Link>
+            <Link href={'/products'} className='hover:opacity-70'>
+              Product
+            </Link>
+            <Link href={'/gallery'} className='hover:opacity-70'>
+              Gallery
+            </Link>
+            <Link href={'/'} className='hover:opacity-70'>
+              Contact
+            </Link>
           </div>
           <div className='contact-location pb-12 md:pb-0 text-center md:text-start'>
             <div className='contact flex flex-col gap-4 pb-12'>
@@ -69,6 +79,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <p className='pt-24 px-10 text-center tracking-[.1em] font-light'>
+          Designed and developed by{' '}
+          <Link href={'www.psicode.dev'} className='hover:opacity-70'>
+            <span className='font-extrabold'>PLANG-PSM</span>
+          </Link>
+        </p>
       </div>
     </>
   );
