@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import PBStem from '@public/static/PBStem.svg';
+import PBStem from '@public/static/PBStem.png';
 import BottomWave3 from '@/public/static/BottomWave3.svg';
 import Placeholder from '@/public/static/Placeholder.svg';
 import WeddingTL from '@/public/static/WeddingTL.svg';

@@ -1,4 +1,6 @@
 import React from 'react';
+import LinkButton from './LinkButton';
+import Image from 'next/image';
 
 type MediaDataType = {
   img: string;
@@ -6,21 +8,34 @@ type MediaDataType = {
   desc: string;
 };
 
-const ADList = ({ img, heading, desc }: MediaDataType, index: number) => {
+const ADList = ({ img, heading }: MediaDataType, index: number) => {
   return (
-    <div className='max-w-[400px] w-full sm-md:basis-5/12 mx-auto' key={index}>
+    <div
+      className='max-w-[600px] max-h-[575px] w-full h-full mx-auto'
+      key={index}
+    >
       <div className='w-full h-full flex flex-col justify-center items-center'>
-        <div className='w-full h-full relative '>
-          <img
+        <div className='w-full h-full relative'>
+          <Image
             src={img}
+            width={0}
+            height={0}
+            sizes='100vw'
             alt={`${heading} image`}
-            className='h-[550px] object-cover w-full'
+            className='w-[450px] max-h-[400px] object-cover object-top rounded-3xl mx-auto'
           />
-          <div className='absolute p-6 h-[175px] sm-md:h-[190px] md:h-[255px] bottom-0 left-0 right-0 text-white'>
+          <div className='absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 rounded-3xl'></div>
+
+          <div className='absolute p-6 max-h-[150px] md:max-h-[175px] max-w-[400px] w-full h-full bottom-0 left-0 right-0 text-white'>
             <h2 className='font-extrabold text-lg md:text-2xl py-2 uppercase'>
               {heading}
             </h2>
-            <p className='font-thin text-md'>{desc}</p>
+            <LinkButton
+              style='py-2 px-4 bg-red-600 text-lg font-semibold hover:opacity-80'
+              href={'/products'}
+            >
+              Book
+            </LinkButton>
           </div>
         </div>
       </div>
