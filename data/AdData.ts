@@ -10,12 +10,7 @@ const AdData = [
     desc: 'Where Love Sparks Forever in Every Frame! Step into our romantic-themed photo booth & let your love story unfold 💕📸',
   },
   {
-    img: '/static/Birthday.svg',
-    heading: 'Birthdays',
-    desc: 'Squad Up For Your Birthdays! Step into our birthday-themed photo booth & let the festivities begin! 🎉📸',
-  },
-  {
-    img: '/static/Events.svg',
+    img: '/static/AdEvents.png',
     heading: 'Corporate Events',
     desc: 'Elevating Corporate Events with Memorable Moments! Hire us for your next event!',
   },

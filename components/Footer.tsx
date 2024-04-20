@@ -4,14 +4,14 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { FaRegClock } from 'react-icons/fa';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaRegEnvelope } from 'react-icons/fa';
-import Logo from '@public/static/Logo.svg';
+import Logo from '@public/static/logo.svg';
 import Link from 'next/link';
 
 const Footer = () => {
   return (
     <>
       <div className='w-full bg-black text-white py-24'>
-        <div className='footer-container max-w-[1100px] px-6 uppercase md:flex justify-between mx-auto font-light'>
+        <div className='footer-container max-w-[1400px] px-6 uppercase md:flex justify-between mx-auto font-light'>
           <div className='logo-socials pb-12 md:pb-0'>
             <div className='logo mx-auto pb-12'>
               <Image

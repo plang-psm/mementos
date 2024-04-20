@@ -17,7 +17,7 @@ function Contact() {
   }
 
   return (
-    <div className='max-w-[350px] md:max-w-full w-full mx-auto'>
+    <div className='max-w-[600px] md:max-w-full w-full mx-auto'>
       <div className='contact-form pt-4' id='contact'>
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -28,7 +28,7 @@ function Contact() {
             <input
               type='text'
               id='name'
-              className='p-1 w-full'
+              className='p-1 w-full bg-slate-200'
               {...register('username', { required: 'Username Required' })}
               name='username'
               autoComplete='name'
@@ -46,7 +46,7 @@ function Contact() {
             <input
               type='email'
               id='email'
-              className='p-1 w-full'
+              className='p-1 w-full bg-slate-200'
               {...register('email', {
                 required: 'Email is required',
                 pattern: {
@@ -70,7 +70,7 @@ function Contact() {
             <textarea
               cols={20}
               rows={5}
-              className='p-1 w-full '
+              className='p-1 w-full bg-slate-200'
               {...register('message', { required: true })}
               name='message'
               autoComplete='message'
@@ -79,7 +79,7 @@ function Contact() {
           </label>
           <button
             type='submit'
-            className='bg-[#1F54D9] p-1 text-white hover:bg-opacity-70'
+            className='py-2 px-6 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
           >
             Submit
           </button>
