@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Logo from '@/public/static/logo.svg';
+import Logo from '@/public/static/Logo.svg';
 import VdayGif from '@/public/static/Vday.gif';
 import CustomTemplate from '@/public/static/TapScreen.gif';
 import PhotoBooth from '@/public/static/PhotoBooth.png';
