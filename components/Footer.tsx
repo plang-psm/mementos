@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <>
       <div className='w-full bg-black text-white py-24'>
-        <div className='footer-container max-w-[1100px] px-6 uppercase md:flex justify-between mx-auto font-light'>
+        <div className='footer-container max-w-[1400px] px-6 uppercase md:flex justify-between mx-auto font-light'>
           <div className='logo-socials pb-12 md:pb-0'>
             <div className='logo mx-auto pb-12'>
               <Image
