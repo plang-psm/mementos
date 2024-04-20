@@ -67,7 +67,7 @@ export default function Home() {
           <div className='image w-full py-4 md:py-8'>
             <Image
               src={Logo}
-              className='m-auto md:ml-auto w-full object-cover md:min-w-[330px] max-w-[400px]'
+              className='mx-auto md:mr-auto md:ml-0 w-full object-cover md:min-w-[330px] max-w-[400px]'
               width={0}
               height={0}
               sizes='100vw'
