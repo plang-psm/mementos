@@ -1,35 +1,33 @@
 import React from 'react';
 import Image from 'next/image';
 import PBStem from '@public/static/PBStem.png';
-import BottomWave3 from '@/public/static/BottomWave3.svg';
-import Placeholder from '@/public/static/Placeholder.svg';
-import WeddingTL from '@/public/static/WeddingTL.svg';
-import WeddingTR from '@/public/static/WeddingTR.svg';
-import WeddingBL from '@/public/static/WeddingBL.svg';
-import WeddingBR from '@/public/static/WeddingBR.svg';
+import Logo from '@/public/static/Logo.svg';
+import Placeholder from '@/public/static/Placeholder.png';
 
 const about = () => {
   return (
     <>
-      <div className='header-container pt-12 lg:py-36 max-w-[600px] md:max-w-[800px] lg:max-w-[1100px] m-auto'>
-        <div className='title pt-6 px-6 flex flex-col items-center'>
-          <h1 className='font-extrabold text-4xl md:text-5xl lg:text-7xl pb-4 tracking-[.05em] lg:leading-[5rem]'>
+      <div className='header-container relative py-24 md:py-36 max-w-[600px] md:max-w-[800px] lg:max-w-[1100px] m-auto'>
+        <div className='title pb-24 lg:pb-48 px-6 flex flex-col items-center'>
+          <h1 className='font-extrabold text-4xl md:text-5xl lg:text-7xl pb-4 tracking-[.05em] md:tracking-[.1em] lg:leading-[5rem]'>
             We Specialize In Bringing People Together & Capturing The Essence Of
             Every Event
           </h1>
+        </div>
+        <div className='absolute bottom-0 right-[37%] md:right-[15em]'>
           <Image
             src={PBStem}
-            width={100}
-            height={100}
+            width={200}
+            height={200}
             alt='Photo Booth with stem image'
-            className='lg:ml-[25em] w-auto h-auto'
+            className='w-auto md:w-[130px] h-auto'
           />
         </div>
       </div>
-      <div className='about-section bg-[#FFF1DB] pt-12 lg:pt-20 lg:mt-4 '>
-        <div className='max-w-[1100px] md:flex md:justify-between gap-10 m-auto px-6'>
+      <div className='about-section py-12 lg:py-28 bg-gradient-to-br from-[#C89A77] via-[#8F553F] to-[#8f563fd9]'>
+        <div className='max-w-[1400px] md:flex md:justify-between gap-10 m-auto px-6 text-white'>
           <div className='title md:w-[25%]'>
-            <h2 className='text-3xl md:text-4xl font-extrabold pb-4'>
+            <h2 className='text-4xl font-extrabold pb-4 text-center md:text-5xl md:text-end lg:text-6xl'>
               About Us
             </h2>
           </div>
@@ -47,17 +45,10 @@ const about = () => {
           </div>
         </div>
       </div>
-      <Image
-        src={BottomWave3}
-        width={100}
-        height={100}
-        alt='wave image'
-        className='w-full h-full p-0 m-0 rotate-180'
-      />
-      <div className='story-section max-w-[1100px] px-6 py-12 md:pt-24 tracking-[.15em] mx-auto'>
-        <div className='lg:flex lg:justify-between md:gap-10 m-auto'>
-          <div className='title w-full pb-4'>
-            <h2 className='text-3xl md:text-5xl font-extrabold pb-4 md:leading-[4rem]'>
+      <div className='story-section max-w-[1400px] px-6 py-12 md:py-24 tracking-[.15em] mx-auto'>
+        <div className='lg:flex lg:justify-between md:gap-10 mx-auto text-center lg:text-start'>
+          <div className='title-desc w-full pb-4 max-w-[500px] lg:max-w-[600px] m-auto'>
+            <h2 className='text-3xl md:text-3xl lg:text-5xl font-bold pb-4 md:leading-[4rem]'>
               The Person Behind The Moment
             </h2>
             <p className='desc md:text-xl tracking-wider'>
@@ -71,58 +62,85 @@ const about = () => {
               memories.
             </p>
           </div>
-          <div className='image max-w-[500px] max-h-[500px] w-full h-full m-auto'>
+          <div className='image max-w-[500px] max-h-[500px] w-full h-full mx-auto lg:ml-auto lg:mr-0'>
             <Image
               src={Placeholder}
               width={500}
               height={500}
               alt='Placeholder image'
-              className='object-contain w-full h-full shadow-xl'
+              className='object-contain  w-full h-full shadow-xl'
             />
           </div>
         </div>
       </div>
-      <div className='images-section max-w-[1100px] px-6 py-12 md:py-24 m-auto'>
-        <h2 className='title text-3xl md:text-5xl font-extrabold pb-4 md:leading-[4rem] text-center'>
+      <div className='max-w-[1400px] mx-auto flex items-center px-6 py-12'>
+        <hr className='flex-grow h-[4px] bg-gray-700' />
+        <span className='text-3xl md:text-4xl font-extrabold uppercase px-4 text-center'>
+          <Image src={Logo} width={300} height={300} alt='Logo Image' />
+        </span>
+        <hr className='flex-grow h-[4px] bg-gray-700' />
+      </div>
+      <div className='images-section max-w-[1400px] px-6  md:py-24 m-auto'>
+        <h2 className='text-3xl md:text-3xl lg:text-5xl font-bold pb-12 md:leading-[4rem] text-center'>
           Your <span className='text-[#B4794D]'>Memento</span> Starts With Us
         </h2>
-        <div className='images grid grid-cols-2 gap-8 w-full'>
-          <div className='image'>
-            <Image
-              src={WeddingTL}
-              width={300}
-              height={300}
-              alt='Wedding top left image'
-              className='object-contain w-full h-full'
-            />
-          </div>
-          <div className='image'>
-            <Image
-              src={WeddingTR}
-              width={300}
-              height={300}
-              alt='Wedding top right image'
-              className='object-contain w-full h-full'
-            />
-          </div>
-          <div className='image'>
-            <Image
-              src={WeddingBL}
-              width={300}
-              height={300}
-              alt='Wedding bottom left image'
-              className='object-contain w-full h-full'
-            />
-          </div>
-          <div className='image'>
-            <Image
-              src={WeddingBR}
-              width={300}
-              height={300}
-              alt='Wedding top right image'
-              className='object-contain w-full h-full'
-            />
-          </div>
+        <div className='images grid grid-cols-2 md:grid-cols-4 gap-8 w-full'>
+          <Image
+            src={Placeholder}
+            width={300}
+            height={300}
+            alt='Wedding top left image'
+            className='object-contain w-full h-full'
+          />
+          <Image
+            src={Placeholder}
+            width={300}
+            height={300}
+            alt='Wedding top left image'
+            className='object-contain w-full h-full'
+          />
+          <Image
+            src={Placeholder}
+            width={300}
+            height={300}
+            alt='Wedding top left image'
+            className='object-contain w-full h-full'
+          />
+          <Image
+            src={Placeholder}
+            width={300}
+            height={300}
+            alt='Wedding top left image'
+            className='object-contain w-full h-full'
+          />
+          <Image
+            src={Placeholder}
+            width={300}
+            height={300}
+            alt='Wedding top left image'
+            className='object-contain w-full h-full'
+          />
+          <Image
+            src={Placeholder}
+            width={300}
+            height={300}
+            alt='Wedding top left image'
+            className='object-contain w-full h-full'
+          />
+          <Image
+            src={Placeholder}
+            width={300}
+            height={300}
+            alt='Wedding top left image'
+            className='object-contain w-full h-full'
+          />
+          <Image
+            src={Placeholder}
+            width={300}
+            height={300}
+            alt='Wedding top left image'
+            className='object-contain w-full h-full'
+          />
         </div>
       </div>
     </>
