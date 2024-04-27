@@ -144,12 +144,12 @@ const products = () => {
           </div>
         </div>
       </div>
-      <div className='pricing max-w-[1400px] mx-auto pb-12 md:pb-36'>
-        <h2 className='text-3xl md:text-3xl lg:text-5xl font-bold pb-12 text-center'>
+      <div className='pricing max-w-[1400px] mx-auto pb-12 md:pb-24 lg:pb-36'>
+        <h2 className='text-3xl md:text-3xl lg:text-5xl font-bold pb-12 md:pb-24 text-center'>
           The Perfect Prices <br />
           For The Perfect Moment
         </h2>
-        <div className='max-w-[1400px] mx-auto px-6 pb-12 lg:px-0 flex flex-col gap-12 justify-center items-center md:gap-16 md:flex-row md:justify-between rounded-2xl'>
+        <div className='max-w-[1400px] mx-auto px-6 pb-12 md:pb-24 lg:pb-36 lg:px-0 flex flex-col gap-12 justify-center items-center md:gap-16 md:flex-row md:justify-between rounded-2xl'>
           {PricingData.map(
             ({ title, text, pricing, time, link, favorite }, index) => {
               return (
@@ -166,7 +166,7 @@ const products = () => {
             }
           )}
         </div>
-        <div className='w-full pb-12 px-6 lg:px-0 text-center content-center'>
+        <div className='w-full pb-12 md:pb-24 lg:pb-36 px-6 lg:px-0 text-center content-center'>
           <div className='px-4 py-12 bg-[#101720] text-white'>
             <h2 className='text-4xl md:text-5xl lg:text-6xl font-semibold pb-4'>
               Have A Special Accomodation?
@@ -185,8 +185,8 @@ const products = () => {
             </LinkButton>
           </div>
         </div>
-        <div className='add-ons px-6 mx-auto'>
-          <div className='flex items-center pb-12 md:pb-24'>
+        <div className='add-ons px-6 mx-auto md:pb-24 lg:pb-36'>
+          <div className='flex items-center pb-12 md:pb-24 '>
             <hr className='flex-grow h-[2px] bg-gray-700' />
             <span className='text-3xl md:text-3xl lg:text-5xl font-extrabold uppercase px-4 text-center'>
               Add ons
