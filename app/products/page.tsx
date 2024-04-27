@@ -10,6 +10,7 @@ import AddOnList from '@components/AddOnList';
 import AddOnData from '@data/AddOnData';
 import CTA from '@components/CTA';
 import FAQ from '@components/FAQ';
+import FaqData from '@data/FaqData';
 
 const products = () => {
   return (
@@ -52,80 +53,80 @@ const products = () => {
                 <li className='md:text-lg inline-flex py-2'>
                   <Image
                     src={Checkmark}
-                    width={20}
-                    height={20}
+                    width={0}
+                    height={0}
                     alt='checkmark icon'
-                    className='w-100 h-100'
+                    className='w-[20px] h-auto'
                   />
                   Instant Photo Sharing
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
                   <Image
                     src={Checkmark}
-                    width={20}
-                    height={20}
+                    width={0}
+                    height={0}
                     alt='checkmark icon'
-                    className='w-100 h-100'
+                    className='w-[20px] h-auto'
                   />
                   Custom Photo Templates
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
                   <Image
                     src={Checkmark}
-                    width={20}
-                    height={20}
+                    width={0}
+                    height={0}
                     alt='checkmark icon'
-                    className='w-100 h-100'
+                    className='w-[20px] h-auto'
                   />
                   GIFs and Boomerangs
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
                   <Image
                     src={Checkmark}
-                    width={20}
-                    height={20}
+                    width={0}
+                    height={0}
                     alt='checkmark icon'
-                    className='w-100 h-100'
+                    className='w-[20px] h-auto'
                   />
                   High Quality Photos
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
                   <Image
                     src={Checkmark}
-                    width={20}
-                    height={20}
+                    width={0}
+                    height={0}
                     alt='checkmark icon'
-                    className='w-100 h-100'
+                    className='w-[20px] h-auto'
                   />
                   Basic Backdrop
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
                   <Image
                     src={Checkmark}
-                    width={20}
-                    height={20}
+                    width={0}
+                    height={0}
                     alt='checkmark icon'
-                    className='w-100 h-100'
+                    className='w-[20px] h-auto'
                   />
                   Tap to Start
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
                   <Image
                     src={Checkmark}
-                    width={20}
-                    height={20}
+                    width={0}
+                    height={0}
                     alt='checkmark icon'
-                    className='w-100 h-100'
+                    className='w-[20px] h-auto'
                   />
                   Custom Props
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
                   <Image
                     src={Checkmark}
-                    width={20}
-                    height={20}
+                    width={0}
+                    height={0}
                     alt='checkmark icon'
-                    className='pt-1'
+                    className='w-[20px] h-auto'
                   />
                   Gallery Access 24hrs after event
                 </li>
@@ -208,14 +209,16 @@ const products = () => {
         </div>
       </div>
 
-      <div className='faq mx-auto py-12 md:pb-36 px-6 bg-gray-100'>
+      <div className='faq mx-auto h-full py-12 md:pb-36 px-6 bg-gray-100'>
         <div className='max-w-[1400px] w-full mx-auto'>
           <div className='flex flex-col md:flex-row'>
             <div className='w-full md:w-[40%] md:p-8 lg:p-24 text-3xl md:text-4xl'>
               Lets clarify <br />A Few Things
             </div>
             <div className='w-full md:w-[60%]'>
-              <FAQ />
+              {FaqData.map(({ question, answer }, index) => {
+                return <FAQ question={question} answer={answer} key={index} />;
+              })}
             </div>
           </div>
         </div>

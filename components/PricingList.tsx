@@ -37,7 +37,7 @@ const PricingList = (
               {time} hours
             </p>
           </div>
-          <Link href={link}>
+          <Link href={link} aria-label={`${title} pricing link`}>
             <TfiArrowCircleRight
               size={35}
               className='mx-auto rounded-2xl hover:-translate-y-1'
