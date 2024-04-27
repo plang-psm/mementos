@@ -6,21 +6,18 @@ type MediaDataType = {
   desc: string;
 };
 
-const AddOnList = ({ img, heading, desc }: MediaDataType, index: number) => {
+const AddOnList = ({ heading, desc }: MediaDataType, index: number) => {
   return (
     <div
-      className='max-w-[350px] mx-auto w-full border-2 rounded-2xl'
+      className='max-w-[350px] lg:max-w-[450px] h-[300px] mx-auto w-full shadow-lg'
       key={index}
     >
       <div className='w-full h-full flex flex-col justify-center items-center p-10'>
-        <div className='max-w-[75px] max-h-[75px]'>
-          <img src={img} alt={`${heading} image`} className='h-[75px]' />
-        </div>
-        <div className='w-full h-100 pt-4'>
-          <h2 className='font-extrabold text-lg md:text-xl py-2 uppercase'>
+        <div className='w-full pt-4'>
+          <h2 className='text-5xl lg:text-5xl text-start font-extrabold pb-6'>
             {heading}
           </h2>
-          <p className='md:text-lg'>{desc}</p>
+          <p className='text-xl'>{desc}</p>
         </div>
       </div>
     </div>

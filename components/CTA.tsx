@@ -4,8 +4,8 @@ import LinkButton from './LinkButton';
 const CTA = () => {
   return (
     <>
-      <div className='CTA pb-12 md:pb-24'>
-        <div className='max-w-[1400px] my-12 md:my-24 px-6 md:px-0 h-[400px] mx-auto bg-[url("/static/Squad.gif")] bg-cover bg-center'>
+      <div className='CTA'>
+        <div className='max-w-[1400px] px-6 md:px-0 h-[400px] mx-auto bg-[url("/static/Squad.gif")] bg-cover bg-center'>
           <div className='content text-white text-center h-full content-center'>
             <h2 className='text-5xl md:text-6xl lg:text-7xl font-extrabold pb-4 [text-shadow:_0_0_80px_rgb(0_0_0_/_100%)] uppercase'>
               Capture Your Mementos <br /> With Us!

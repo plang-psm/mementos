@@ -1,35 +1,20 @@
 const PricingData = [
   {
-    heading: 'Standard',
+    title: 'Standard',
+    text: 'Easy & Affordable.',
     pricing: '250',
-    desc: [
-      '2 Hours',
-      'Unlimited Photos',
-      'Digital Prints',
-      'Instant Digital Sharing',
-      'Photos, GIFs, Etc.',
-      'Custom Tap Screen',
-      'Custom Photo Templates',
-      'Basic Backdrop',
-      '100% Satisfaction',
-    ],
-    buttonLink: '/',
+    time: '2',
+    link: '/',
+    favorite: false
+
   },
   {
-    heading: 'Premium',
+    title: 'Premium',
+    text: 'More Time, More Fun',
     pricing: '350',
-    desc: [
-      '3 Hours',
-      'Unlimited Photos',
-      'Digital Prints',
-      'Instant Digital Sharing',
-      'Photos, GIFs, Etc.',
-      'Custom Tap Screen',
-      'Custom Photo Templates',
-      'Basic Backdrop',
-      '100% Satisfaction',
-    ],
-    buttonLink: '/',
+    time: '3',
+    link: '/',
+    favorite: true
   },
 ];
 
