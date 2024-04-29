@@ -8,7 +8,7 @@ interface props {
 }
 
 const FAQ = ({ question, answer }: props, index: number) => {
-  const [open, setOpen] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <>
       <div
@@ -16,21 +16,33 @@ const FAQ = ({ question, answer }: props, index: number) => {
         key={index}
       >
         <div className='py-4'>
-          <div className='flex justify-between cursor-pointer items-center '>
-            <h3 className='font-bold md:text-xl tracking-wide '>{question}</h3>
-            <button  onClick={() => setOpen(!open)} role='button' aria-label={`${index} dropdown icon`}>
-              <MdKeyboardArrowDown
-                size={35}
-                className={open ? 'transition rotate-180' : ''}
-              />
-            </button>
-          </div>
-          {open && (
+          <button
+            id={`${index}-accordion-button`}
+            aria-expanded={isExpanded}
+            aria-controls={`${index}-accordion-panel`}
+            aria-label={question}
+            onClick={() => setIsExpanded(!isExpanded)}
+            className='flex justify-between cursor-pointer items-center w-full'
+          >
+            <h3 className='font-bold md:text-xl tracking-wide'>{question}</h3>
+
+            <MdKeyboardArrowDown
+              size={35}
+              className={isExpanded ? 'transition rotate-180' : ''}
+            />
+          </button>
+        </div>
+        {isExpanded && (
+          <section
+            id={`${index}-accordion-panel`}
+            aria-labelledby={`${index}-accordion-button`}
+            aria-label={answer}
+          >
             <p className='mt-3 text-neutral-600 md:text-lg tracking-wide'>
               {answer}
             </p>
-          )}
-        </div>
+          </section>
+        )}
       </div>
     </>
   );
