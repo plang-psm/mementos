@@ -12,7 +12,8 @@ const CTA = () => {
             </h2>
             <LinkButton
               style='py-2 px-6 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
-              href={'/products'}
+              href={'https://book.usesession.com/i/QXUI37JLqa/session-type/155499'}
+              tab='_blank'
             >
               Book now
             </LinkButton>

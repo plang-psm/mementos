@@ -7,15 +7,17 @@ interface LinkButtonProps {
   onClick?: React.MouseEventHandler;
   disabled?: boolean;
   style?: string;
+  tab?: string;
 }
 
 const LinkButton = ({
   style,
   href,
   children,
+  tab,
 }: LinkButtonProps) => {
   return (
-    <Link href={href}>
+    <Link href={href} target={tab}>
       <button className={style}>
         {children}
       </button>
