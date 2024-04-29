@@ -22,14 +22,17 @@ export default function Home() {
           </h2>
           <div className='button'>
             <LinkButton
-              style='py-2 px-6 mr-2 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
-              href={'/products'}
+              style='py-2 px-6 mr-6 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
+              href={
+                'https://book.usesession.com/i/QXUI37JLqa/session-type/155499'
+              }
+              tab='_blank'
             >
               Book Now
             </LinkButton>
             <LinkButton
               style='py-2 px-6 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
-              href={'/products'}
+              href={'/about'}
             >
               Learn More
             </LinkButton>
@@ -39,7 +42,7 @@ export default function Home() {
       <div className='about max-w-[1400px] mx-auto px-6'>
         <div className='about-logo md:mx-auto flex flex-col md:flex-row md:justify-between md:items-center md:gap-8'>
           <div className='content mx-auto max-w-[500px] md:md:min-w-[300px] md:max-w-[600px] py-12 md:py-24 text-center order-2'>
-            <h2 className='text-3xl md:text-3xl lg:text-5xl font-bold uppercase'>
+            <h2 className='text-3xl md:text-3xl lg:text-5xl font-bold'>
               The Perfect Booth <br />
               For Your Mementos
             </h2>
@@ -47,7 +50,7 @@ export default function Home() {
               Memento's is a Latino owned Photo Booth rental company based out
               of <span className='font-extrabold'>Los Angeles, CA</span>. Our
               state-of-the-art booths are equipped with{' '}
-              <span className='font-extrabold'>high-quality</span> photos and a
+              <span className='font-extrabold'>high-quality photos</span> and a
               wide array of fun props, ensuring every snapshot is a moment to
               cherish. Whether it's a{' '}
               <span className='font-extrabold'>wedding, birthday bash,</span> or{' '}
@@ -58,7 +61,7 @@ export default function Home() {
             <div className='button text-center'>
               <LinkButton
                 style='py-2 px-6 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
-                href={'/products'}
+                href={'/about'}
               >
                 Learn More
               </LinkButton>
@@ -112,9 +115,9 @@ export default function Home() {
             />
           </div>
           <div className='content mx-auto max-w-[500px] md:md:min-w-[300px] md:max-w-[600px]'>
-            <h2 className='text-3xl md:text-5xl font-bold uppercase'>
+            <h3 className='text-3xl md:text-5xl font-bold uppercase'>
               Unlimited Digital Photos
-            </h2>
+            </h3>
             <p className='py-4 md:text-lg tracking-wide'>
               Snap away knowing that every snapshot will be preserved digitally
               to treasure and share for years to come. Capture the joy of your
@@ -130,8 +133,9 @@ export default function Home() {
         </div>
         <Image
           src={FooterLine}
-          width={500}
-          height={500}
+          width={0}
+          height={0}
+          sizes='100vw'
           className='mx-auto py-12 md:py-20 w-[50%] h-full'
           alt='Image of line break'
         />
@@ -148,9 +152,9 @@ export default function Home() {
             />
           </div>
           <div className='content mx-auto max-w-[500px] text-end md:md:min-w-[300px] md:max-w-[600px]'>
-            <h2 className='text-3xl md:text-5xl font-bold uppercase text-end'>
+            <h3 className='text-3xl md:text-5xl font-bold uppercase text-end'>
               Custom Photo Templates
-            </h2>
+            </h3>
             <p className='py-4 md:text-lg tracking-wide'>
               From corporate branding to birthday celebrations, our tailored
               templates elevate every photo, making each moment truly
@@ -187,9 +191,9 @@ export default function Home() {
             />
           </div>
           <div className='content mx-auto max-w-[500px] md:md:min-w-[300px] md:max-w-[600px]'>
-            <h2 className='text-3xl md:text-5xl font-bold uppercase'>
+            <h3 className='text-3xl md:text-5xl font-bold uppercase'>
               Instant Photos, GIFs, & Boomerangs
-            </h2>
+            </h3>
             <p className='py-4 md:text-lg tracking-wide'>
               Bring your memories to life with dynamic GIFs and boomerangs!
               Whether you're striking a pose with friends or showing off your
@@ -205,7 +209,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <CTA />
+      <div className='pb-12 md:pb-24'>
+        <CTA />
+      </div>
     </>
   );
 }

@@ -32,7 +32,10 @@ const ADList = ({ img, heading }: MediaDataType, index: number) => {
             </h2>
             <LinkButton
               style='py-2 px-4 bg-red-600 text-lg font-semibold hover:opacity-80'
-              href={'/products'}
+              href={
+                'https://book.usesession.com/i/QXUI37JLqa/session-type/155499'
+              }
+              tab='_blank'
             >
               Book
             </LinkButton>
