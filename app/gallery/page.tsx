@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Logo from '@/public/static/Logo.svg';
+import Logo from '@/public/static/Logo.png';
 import LinkButton from '../../components/LinkButton';
 
 import GalleryList from './GalleryList';

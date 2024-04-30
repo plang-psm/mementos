@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import PBStem from '@public/static/PBStem.png';
-import Logo from '@/public/static/Logo.svg';
+import Logo from '@/public/static/Logo.png';
 import Placeholder from '@/public/static/Placeholder.png';
 
 const about = () => {

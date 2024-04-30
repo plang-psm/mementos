@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import GalleryData from '@data/GalleryData';
 
-const GalleryPageList = async () => {
+const GalleryPageList = () => {
   return (
     <>
       {GalleryData.map(({ img, alt }, index: number) => (
