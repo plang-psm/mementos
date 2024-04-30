@@ -4,7 +4,7 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { FaRegClock } from 'react-icons/fa';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaRegEnvelope } from 'react-icons/fa';
-import Logo from '@public/static/Logo.svg';
+import Logo from '@public/static/Logo.png';
 import Link from 'next/link';
 
 const Footer = () => {

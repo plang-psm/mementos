@@ -1,8 +1,9 @@
 import Image from 'next/image';
-import Logo from '@/public/static/Logo.svg';
+import Logo from '@/public/static/Logo.png';
 import VdayGif from '@/public/static/Vday.gif';
 import CustomTemplate from '@/public/static/TapScreen.gif';
 import PhotoBooth from '@/public/static/PhotoBooth.png';
+import HeaderImg1 from '@/public/static/HeaderImg1.png';
 import LinkButton from '@components/LinkButton';
 import FooterLine from '@/public/static/FooterLine.svg';
 import AdData from '@data/AdData';
@@ -12,8 +13,18 @@ import CTA from '@components/CTA';
 export default function Home() {
   return (
     <>
-      <div className='hero h-svh relative overflow-hidden'>
-        <div className='hero-header h-full text-center bg-[url("/static/HeaderImg1.png")] bg-cover bg-center lg:bg-contain lg:bg-top text-white flex flex-col justify-center'>
+      <div className='hero h-svh relative overflow-hidde'>
+        <Image
+          alt='Header image'
+          src={HeaderImg1}
+          placeholder='blur'
+          quality={100}
+          fill
+          priority
+          sizes='100vw'
+          className='object-cover relative z-0 w-full h-full'
+        />
+        <div className='hero-header relative h-full text-center  text-white flex flex-col justify-center'>
           <h1 className='text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold uppercase pb-6 [text-shadow:_0_0_80px_rgb(0_0_0_/_100%)]'>
             Mementos
           </h1>
@@ -110,8 +121,8 @@ export default function Home() {
               height={0}
               sizes='100vw'
               placeholder='blur'
+              loading='lazy'
               alt='Photobooth image'
-              priority
             />
           </div>
           <div className='content mx-auto max-w-[500px] md:md:min-w-[300px] md:max-w-[600px]'>
@@ -136,6 +147,7 @@ export default function Home() {
           width={0}
           height={0}
           sizes='100vw'
+          loading='lazy'
           className='mx-auto py-12 md:py-20 w-[50%] h-full'
           alt='Image of line break'
         />
@@ -147,8 +159,8 @@ export default function Home() {
               width={0}
               height={0}
               sizes='100vw'
+              loading='lazy'
               alt='Photobooth image'
-              priority
             />
           </div>
           <div className='content mx-auto max-w-[500px] text-end md:md:min-w-[300px] md:max-w-[600px]'>
@@ -175,6 +187,7 @@ export default function Home() {
           width={0}
           height={0}
           sizes='100vw'
+          loading='lazy'
           className='mx-auto py-12 md:py-20 w-[50%] h-full'
           alt='Image of line break'
         />
@@ -187,7 +200,7 @@ export default function Home() {
               height={0}
               sizes='100vw'
               alt='Photobooth image'
-              priority
+              loading='lazy'
             />
           </div>
           <div className='content mx-auto max-w-[500px] md:md:min-w-[300px] md:max-w-[600px]'>
