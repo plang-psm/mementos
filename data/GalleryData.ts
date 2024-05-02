@@ -1,51 +1,51 @@
 const GalleryData = [
   {
-    img: '/static/Header1.svg',
+    img: '/static/WeddingHeader.png',
     alt: 'Wedding label image',
   },
   {
-    img: '/static/Header2.svg',
+    img: '/static/EventsHeader.png',
     alt: 'Events label image',
   },
   {
-    img: '/static/Header3.svg',
+    img: '/static/SportsHeader.png',
     alt: 'Sports label image',
   },
   {
-    img: '/static/Wedding1.svg',
+    img: '/static/Wedding1.png',
     alt: 'Wedding image',
   },
   {
-    img: '/static/Galentine2.svg',
+    img: '/static/Events1.png',
     alt: 'Galentine image',
   },
   {
-    img: '/static/Sports3.svg',
+    img: '/static/Sports1.png',
     alt: 'Sports image',
   },
   {
-    img: '/static/Wedding2.svg',
+    img: '/static/Wedding2.png',
 
     alt: 'Wedding image',
   },
   {
-    img: '/static/Galentine3.svg',
+    img: '/static/Events2.png',
     alt: 'Galentine image',
   },
   {
-    img: '/static/Sports2.svg',
+    img: '/static/Sports2.png',
     alt: 'Sports image',
   },
   {
-    img: '/static/Wedding5.svg',
+    img: '/static/Wedding3.png',
     alt: 'Wedding image',
   },
   {
-    img: '/static/Galentine4.svg',
+    img: '/static/Events3.png',
     alt: 'Galentine image',
   },
   {
-    img: '/static/Sports5.svg',
+    img: '/static/Sports3.png',
     alt: 'Sports image',
   },
 ];

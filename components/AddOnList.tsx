@@ -1,7 +1,6 @@
 import React from 'react';
 
 type MediaDataType = {
-  img: string;
   heading: string;
   desc: string;
 };

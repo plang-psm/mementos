@@ -6,12 +6,15 @@ const GalleryPageList = () => {
   return (
     <>
       {GalleryData.map(({ img, alt }, index: number) => (
-        <div className='image overflow-hidden' key={index}>
+        <div className='image mx-auto' key={index}>
           <Image
             src={img}
             width={0}
-            height={250}
-            className='w-full h-[250px] object-cover transition-transform transform hover:scale-95 duration-300 ease-in-out'
+            height={0}
+            sizes='100vw'
+            quality={100}
+            priority
+            className='w-[300px] h-[300px] object-cover transition-transform transform hover:scale-95 duration-300 ease-in-out'
             alt={alt}
           />
         </div>

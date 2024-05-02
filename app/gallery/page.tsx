@@ -8,13 +8,14 @@ import GalleryList from './GalleryList';
 const gallery = () => {
   return (
     <>
-      <div className='instagram max-w-[1300px] py-12 px-6 mx-auto md:flex gap-4'>
-        <div className='profile text-center flex flex-col gap-4'>
+      <div className='instagram max-w-[1300px] py-12 mx-auto md:flex gap-4'>
+        {/* <div className='profile text-center flex flex-col gap-4'>
           <div className='image'>
             <Image
               src={Logo}
               width={150}
               height={150}
+              quality={100}
               alt='Mementos logo images'
               className='mx-auto'
             />
@@ -33,8 +34,8 @@ const gallery = () => {
           >
             Follow
           </LinkButton>
-        </div>
-        <div className='grid-images py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 max-w-[950px] m-auto'>
+        </div> */}
+        <div className='grid-images py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[1400px] m-auto'>
           <GalleryList />
         </div>
       </div>

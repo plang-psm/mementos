@@ -1,8 +1,8 @@
 import React from 'react';
-import ThreePB from '@public/static/Three-pb.svg';
+import ThreePB from '@public/static/PBThree.png';
 import Image from 'next/image';
 import Collage from '@public/static/Collage.png';
-import Checkmark from '@public/static/checkmark.svg';
+import Checkmark from '@public/static/Checkmark.svg';
 import LinkButton from '@components/LinkButton';
 import PricingList from '@components/PricingList';
 import PricingData from '@data/PricingData';
@@ -22,6 +22,7 @@ const products = () => {
             width={0}
             height={0}
             alt='Photobooth image'
+            quality={100}
             priority
             className='w-100 h-100'
           />
@@ -195,15 +196,8 @@ const products = () => {
             <hr className='flex-grow h-[2px] bg-gray-700' />
           </div>
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-12'>
-            {AddOnData.map(({ img, heading, desc }, index) => {
-              return (
-                <AddOnList
-                  key={index}
-                  img={img}
-                  heading={heading}
-                  desc={desc}
-                />
-              );
+            {AddOnData.map(({ heading, desc }, index) => {
+              return <AddOnList key={index} heading={heading} desc={desc} />;
             })}
           </div>
         </div>
