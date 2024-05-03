@@ -18,6 +18,7 @@ const Footer = () => {
                 src={Logo}
                 width={250}
                 height={250}
+                quality={100}
                 alt='Logo image'
                 className='mx-auto'
               />
