@@ -9,6 +9,7 @@ import FooterLine from '@/public/static/FooterLine.svg';
 import AdData from '@data/AdData';
 import ADList from '@components/ADList';
 import CTA from '@components/CTA';
+import { IoIosArrowDroprightCircle } from 'react-icons/io';
 
 export default function Home() {
   return (
@@ -45,7 +46,7 @@ export default function Home() {
               style='py-2 px-6 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
               href={'/about'}
             >
-              Learn More
+              Our Story
             </LinkButton>
           </div>
         </div>
@@ -74,7 +75,7 @@ export default function Home() {
                 style='py-2 px-6 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
                 href={'/about'}
               >
-                Learn More
+                Our Story
               </LinkButton>
             </div>
           </div>
@@ -136,10 +137,10 @@ export default function Home() {
               special occasion with Mementos – where the memories are unlimited.
             </p>
             <LinkButton
-              style='text-gray-900 text-xl font-bold hover:opacity-70 underline'
+              style='text-gray-900 text-xl font-bold hover:opacity-70 underline flex items-center gap-1'
               href={'/products'}
             >
-              Learn More
+              Product details <IoIosArrowDroprightCircle size={25} />
             </LinkButton>
           </div>
         </div>
@@ -176,10 +177,10 @@ export default function Home() {
               forever.
             </p>
             <LinkButton
-              style='text-gray-900 text-xl font-bold hover:opacity-70 underline'
+              style='text-gray-900 text-xl font-bold hover:opacity-70 underline w-full flex justify-end items-center gap-1'
               href={'/products'}
             >
-              Learn More
+              Product details <IoIosArrowDroprightCircle size={25} />
             </LinkButton>
           </div>
         </div>
@@ -215,10 +216,10 @@ export default function Home() {
               every moment is captured in a unique and unforgettable way.
             </p>
             <LinkButton
-              style='text-gray- text-xl font-bold hover:opacity-70 underline'
+              style='text-gray-900 text-xl font-bold hover:opacity-70 underline flex items-center gap-1'
               href={'/products'}
             >
-              Learn More
+              Product details <IoIosArrowDroprightCircle size={25} />
             </LinkButton>
           </div>
         </div>
