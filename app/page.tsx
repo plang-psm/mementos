@@ -51,10 +51,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='about max-w-[1400px] mx-auto px-6'>
+      <div className='about max-w-[1200px] mx-auto px-6'>
         <div className='about-logo md:mx-auto flex flex-col md:flex-row md:justify-between md:items-center md:gap-8'>
           <div className='content mx-auto max-w-[500px] md:md:min-w-[300px] md:max-w-[600px] py-12 md:py-24 text-center order-2'>
-            <h2 className='text-3xl md:text-3xl lg:text-5xl font-bold'>
+            <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold'>
               The Perfect Booth <br />
               For Your Mementos
             </h2>
@@ -113,7 +113,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='products-container max-w-[1400px] py-12 md:py-24 px-6 w-full md:mx-auto'>
+      <div className='products-container max-w-[1200px] py-12 md:py-24 px-6 w-full md:mx-auto'>
         <div className='unlimited-photos md:mx-auto md:flex md:justify-between md:items-center md:gap-4'>
           <div className='image order-2 w-full pb-4 md:pb-0'>
             <Image

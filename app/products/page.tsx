@@ -43,10 +43,10 @@ const products = () => {
       <div className='call to action pb-12 md:pb-36'>
         <CTA />
       </div>
-      <div className='feature-container max-w-[1400px] tracking-[.15em] mx-auto pb-12 md:pb-36'>
+      <div className='feature-container max-w-[1200px] tracking-[.15em] mx-auto pb-12 md:pb-36'>
         <div className='flex flex-col md:flex-row justify-between items-center gap-12'>
           <div className='whats-included w-full px-6 order-2'>
-            <h2 className='text-3xl md:text-3xl lg:text-5xl text-center md:text-start font-bold '>
+            <h2 className='text-3xl md:text-4xl lg:text-5xl text-center md:text-start font-bold '>
               Whats <br /> Included
             </h2>
             <div className='body py-6 w-full'>
@@ -146,8 +146,8 @@ const products = () => {
           </div>
         </div>
       </div>
-      <div className='pricing max-w-[1400px] mx-auto pb-12 md:pb-24 lg:pb-36'>
-        <h2 className='text-3xl md:text-3xl lg:text-5xl font-bold pb-12 md:pb-24 text-center'>
+      <div className='pricing max-w-[1200px] mx-auto pb-12 md:pb-24 lg:pb-36'>
+        <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold pb-12 md:pb-24 text-center'>
           The Perfect Prices <br />
           For The Perfect Moment
         </h2>
@@ -187,10 +187,10 @@ const products = () => {
             </LinkButton>
           </div>
         </div>
-        <div className='add-ons px-6 mx-auto md:pb-24 lg:pb-36'>
+        <div className='add-ons px-6 mx-auto md:pb-24'>
           <div className='flex items-center pb-12 md:pb-24 '>
             <hr className='flex-grow h-[2px] bg-gray-700' />
-            <span className='text-3xl md:text-3xl lg:text-5xl font-extrabold uppercase px-4 text-center'>
+            <span className='text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase px-4 text-center'>
               Add ons
             </span>
             <hr className='flex-grow h-[2px] bg-gray-700' />
@@ -204,7 +204,7 @@ const products = () => {
       </div>
 
       <div className='faq mx-auto h-full py-12 md:pb-36 px-6 bg-gray-100'>
-        <div className='max-w-[1400px] w-full mx-auto'>
+        <div className='max-w-[1200px] w-full mx-auto'>
           <div className='flex flex-col md:flex-row'>
             <div className='w-full md:w-[40%] md:p-8 lg:p-24 text-3xl md:text-4xl'>
               Lets clarify <br />A Few Things
