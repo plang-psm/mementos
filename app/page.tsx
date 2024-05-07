@@ -88,7 +88,7 @@ export default function Home() {
               sizes='100vw'
               quality={100}
               alt='Photobooth image'
-              priority
+              loading='lazy'
             />
           </div>
         </div>
