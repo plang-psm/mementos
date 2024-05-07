@@ -13,7 +13,7 @@ const CTA = () => {
             src={SquadGif}
             quality={100}
             fill
-            priority
+            loading='lazy'
             className='object-cover relative z-0 w-full h-full'
           />
           <div className='content relative text-white text-center h-full content-center'>

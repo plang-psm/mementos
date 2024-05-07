@@ -87,8 +87,8 @@ export default function Home() {
               height={0}
               sizes='100vw'
               quality={100}
-              alt='Photobooth image'
-              priority
+              alt='Logo image'
+              loading='lazy'
             />
           </div>
         </div>
@@ -162,7 +162,7 @@ export default function Home() {
               height={0}
               sizes='100vw'
               loading='lazy'
-              alt='Photobooth image'
+              alt='Customer Template image'
             />
           </div>
           <div className='content mx-auto max-w-[500px] text-end md:md:min-w-[300px] md:max-w-[600px]'>
@@ -201,7 +201,7 @@ export default function Home() {
               width={0}
               height={0}
               sizes='100vw'
-              alt='Photobooth image'
+              alt='Valentine Day gif'
               loading='lazy'
             />
           </div>
