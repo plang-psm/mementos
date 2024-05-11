@@ -20,11 +20,6 @@
       label: 'Gallery',
       link: '/gallery',
     },
-    {
-      index: 4,
-      label: 'Contact',
-      link: '/#contact',
-    },
   ];
 
   export default LINK_ARR

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Raleway } from 'next/font/google';
+import { Raleway, Waterfall } from 'next/font/google';
 import '@styles/globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -7,12 +7,18 @@ import Footer from '@/components/Footer';
 const raleway = Raleway({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-rw',
-})
+  variable: '--font-raleway',
+});
+const waterfall = Waterfall({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-waterfall',
+});
 
 export const metadata: Metadata = {
   title: 'Mementos',
-  description: 'Photobooth business based in Los',
+  description: 'Photo Booth rental company based in Los Angeles',
 };
 
 export default function RootLayout({
@@ -21,7 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className={`${raleway.variable} font-sans`}>
+    <html
+      lang='en'
+      className={`${raleway.variable} ${waterfall.variable} font-sans`}
+    >
       <body>
         <main>
           <Navbar />

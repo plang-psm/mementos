@@ -56,7 +56,10 @@ export default function Home() {
           <div className='content mx-auto max-w-[500px] md:md:min-w-[300px] md:max-w-[600px] py-12 md:py-24 text-center order-2'>
             <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold'>
               The Perfect Booth <br />
-              For Your Mementos
+              For Your{' '}
+              <span className='text-[#B4794D] font-wf text-4xl md:text-5xl lg:text-7xl'>
+                Memento
+              </span>
             </h2>
             <p className='py-4 md:text-lg tracking-wide'>
               Memento's is a Latino owned Photo Booth rental company based out
@@ -79,10 +82,10 @@ export default function Home() {
               </LinkButton>
             </div>
           </div>
-          <div className='image w-full py-4 md:py-8'>
+          <div className='image w-full py-4 pt-12 md:py-8'>
             <Image
               src={Logo}
-              className='mx-auto md:mr-auto md:ml-0 w-full object-cover md:min-w-[330px] max-w-[400px]'
+              className='mx-auto w-full object-cover md:min-w-[330px] max-w-[400px]'
               width={0}
               height={0}
               sizes='100vw'
@@ -137,7 +140,7 @@ export default function Home() {
               special occasion with Mementos – where the memories are unlimited.
             </p>
             <LinkButton
-              style='text-gray-900 text-xl font-bold hover:opacity-70 underline flex items-center gap-1'
+              style='text-gray-900 text-xl font-bold hover:opacity-70 flex items-center gap-1'
               href={'/products'}
             >
               Product details <IoIosArrowDroprightCircle size={25} />
@@ -177,7 +180,7 @@ export default function Home() {
               forever.
             </p>
             <LinkButton
-              style='text-gray-900 text-xl font-bold hover:opacity-70 underline w-full flex justify-end items-center gap-1'
+              style='text-gray-900 text-xl font-bold hover:opacity-70 w-full flex justify-end items-center gap-1'
               href={'/products'}
             >
               Product details <IoIosArrowDroprightCircle size={25} />
@@ -216,7 +219,7 @@ export default function Home() {
               every moment is captured in a unique and unforgettable way.
             </p>
             <LinkButton
-              style='text-gray-900 text-xl font-bold hover:opacity-70 underline flex items-center gap-1'
+              style='text-gray-900 text-xl font-bold hover:opacity-70 flex items-center gap-1'
               href={'/products'}
             >
               Product details <IoIosArrowDroprightCircle size={25} />

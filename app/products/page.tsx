@@ -33,7 +33,9 @@ const products = () => {
           </h1>
           <p className='text-xl md:text-2xl pb-2'>Packages starting at $250</p>
           <LinkButton
-            href={'/'}
+            href={
+              'https://book.usesession.com/i/QXUI37JLqa/session-type/155499'
+            }
             style='py-2 px-6 mr-2 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
           >
             Book Here
@@ -149,7 +151,10 @@ const products = () => {
       <div className='pricing max-w-[1200px] mx-auto pb-12 md:pb-24 lg:pb-36'>
         <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold pb-12 md:pb-24 text-center'>
           The Perfect Prices <br />
-          For The Perfect Moment
+          For The Perfect{' '}
+          <span className='text-[#B4794D] font-wf text-4xl md:text-5xl lg:text-7xl'>
+            Memento
+          </span>
         </h2>
         <div className='max-w-[1400px] mx-auto px-6 pb-12 md:pb-24 lg:pb-36 lg:px-0 flex flex-col gap-12 justify-center items-center md:gap-16 md:flex-row md:justify-between rounded-2xl'>
           {PricingData.map(
