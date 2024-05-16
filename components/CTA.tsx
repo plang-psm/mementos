@@ -1,12 +1,23 @@
+'use client';
 import React from 'react';
 import LinkButton from './LinkButton';
 import SquadGif from '@/public/static/Squad.gif';
 import Image from 'next/image';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 const CTA = () => {
+  const ctaRef = useRef(null);
+  const isCTARefInView = useInView(ctaRef, { once: true });
   return (
     <>
-      <div className='CTA'>
+      <motion.div
+        initial={{ opacity: 0, y: '50px' }}
+        animate={isCTARefInView ? { opacity: 1, y: '0' } : {}}
+        transition={{ duration: 3 }}
+        className='CTA'
+        ref={ctaRef}
+      >
         <div className='max-w-[1400px] px-6 md:px-0 h-[400px] mx-auto relative'>
           <Image
             alt='Header image'
@@ -31,7 +42,7 @@ const CTA = () => {
             </LinkButton>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

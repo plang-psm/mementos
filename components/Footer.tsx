@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import { FaInstagram } from 'react-icons/fa';
@@ -8,15 +9,25 @@ import { FaRegEnvelope } from 'react-icons/fa';
 import { SiZelle } from 'react-icons/si';
 import { BiLogoVenmo } from 'react-icons/bi';
 import { SiCashapp } from 'react-icons/si';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 import Logo from '@public/static/Logo.png';
 import Link from 'next/link';
 import LinkButton from './LinkButton';
 
 const Footer = () => {
+  const footerRef = useRef(null);
+  const isFooterRefInView = useInView(footerRef, { once: true });
   return (
     <>
-      <div className='w-full bg-black text-white py-24'>
+      <motion.div
+        initial={{ opacity: 0, y: '50px' }}
+        animate={isFooterRefInView ? { opacity: 1, y: '0' } : {}}
+        transition={{ duration: 1 }}
+        className='w-full bg-[#101720] text-white py-24'
+        ref={footerRef}
+      >
         <div className='footer-container max-w-[1400px] px-6 uppercase md:flex justify-between gap-6 mx-auto font-light'>
           <div className='logo-socials md:w-[30%] mx-auto pb-12 md:pb-0'>
             <div className='logo mx-auto pb-12'>
@@ -32,9 +43,7 @@ const Footer = () => {
             <div className='payments w-full text-center'>
               <LinkButton
                 href={'/'}
-                style={
-                  'font-extrabold text-2xl text-center pb-5 hover:text-red-600'
-                }
+                style={'font-bold text-2xl text-center pb-5 hover:text-red-600'}
               >
                 Book now
               </LinkButton>
@@ -123,7 +132,7 @@ const Footer = () => {
             <span className='font-extrabold'>PLANG-PSM</span>
           </a>
         </p>
-      </div>
+      </motion.div>
     </>
   );
 };

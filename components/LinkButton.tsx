@@ -1,5 +1,7 @@
+'use client'
 import Link from 'next/link';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 interface LinkButtonProps {
   href: string;
@@ -10,17 +12,17 @@ interface LinkButtonProps {
   tab?: string;
 }
 
-const LinkButton = ({
-  style,
-  href,
-  children,
-  tab,
-}: LinkButtonProps) => {
+const LinkButton = ({ style, href, children, tab }: LinkButtonProps) => {
   return (
     <Link href={href} target={tab}>
-      <button className={style}>
+      <motion.button
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+        className={style}
+      >
         {children}
-      </button>
+      </motion.button>
     </Link>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
 import { TfiArrowCircleRight } from 'react-icons/tfi';
+import LinkButton from './LinkButton';
 
 type PricingDataType = {
   title: string;
@@ -37,12 +37,12 @@ const PricingList = (
               {time} hours
             </p>
           </div>
-          <Link href={link} aria-label={`${title} pricing link`}>
+          <LinkButton href={link} aria-label={`${title} pricing link`}>
             <TfiArrowCircleRight
               size={35}
-              className='mx-auto rounded-2xl hover:-translate-y-1'
+              className='mx-auto rounded-2xl'
             />
-          </Link>
+          </LinkButton>
         </div>
       </div>
     </>
