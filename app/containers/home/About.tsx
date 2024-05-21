@@ -13,12 +13,12 @@ const About = () => {
   return (
     <>
       <div className='about max-w-[1400px] mx-auto px-6' ref={aboutRef}>
-        <div className='about-logo md:mx-auto flex flex-col md:flex-row md:justify-evenly md:items-center md:gap-8'>
-        <motion.div
+        <div className='about-logo md:mx-auto flex flex-col lg:flex-row lg:justify-evenly lg:items-center lg:gap-8'>
+          <motion.div
             initial={{ opacity: 0, y: '50px' }}
             animate={isAboutRefInView ? { opacity: 1, y: '0' } : {}}
             transition={{ duration: 1 }}
-            className='image w-full py-12 md:py-24 max-w-full md:order-2'
+            className='image w-full py-12 lg:py-24 max-w-full md:order-2'
           >
             <Image
               src={Logo}
@@ -34,7 +34,7 @@ const About = () => {
             initial={{ opacity: 0, y: '50px' }}
             animate={isAboutRefInView ? { opacity: 1, y: '0' } : {}}
             transition={{ duration: 1 }}
-            className='content mx-auto max-w-[500px] md:min-w-[300px] md:max-w-[700px] pb-12 md:py-24 text-center'
+            className='content mx-auto lg:min-w-[300px] max-w-[700px] pb-12 lg:py-24 text-center order-2 lg:order-1'
           >
             <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold'>
               The Perfect Booth <br />
@@ -44,8 +44,12 @@ const About = () => {
               </span>
             </h2>
             <p className='py-4 md:text-lg tracking-wide'>
-              Memento's is a <span className='font-extrabold'>Latino owned Photo Booth rental</span> company based out
-              of <span className='font-extrabold'>Los Angeles, CA</span>. Our
+              Memento's is a{' '}
+              <span className='font-extrabold'>
+                Latino owned Photo Booth rental
+              </span>{' '}
+              company based out of{' '}
+              <span className='font-extrabold'>Los Angeles, CA</span>. Our
               state-of-the-art booths are equipped with{' '}
               <span className='font-extrabold'>high-quality photos</span> and a
               wide array of fun props, ensuring every snapshot is a moment to
@@ -53,7 +57,8 @@ const About = () => {
               <span className='font-extrabold'>wedding, birthday bash,</span> or{' '}
               <span className='font-extrabold'>corporate event</span>, our
               customizable packages cater to your specific needs, complete with
-              personalized <span className='font-extrabold'>tap screens</span> and <span className='font-extrabold'>themed props.</span>
+              personalized <span className='font-extrabold'>tap screens</span>{' '}
+              and <span className='font-extrabold'>themed props.</span>
             </p>
             <div className='button text-center'>
               <LinkButton
