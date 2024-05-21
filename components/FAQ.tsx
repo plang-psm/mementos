@@ -38,7 +38,7 @@ const FAQ = ({ question, answer }: props, index: number) => {
             aria-labelledby={`${index}-accordion-button`}
             aria-label={answer}
           >
-            <p className='mt-3 text-neutral-600 md:text-lg tracking-wide'>
+            <p className='mt-3 mb-6 text-neutral-600 md:text-lg tracking-wide'>
               {answer}
             </p>
           </section>

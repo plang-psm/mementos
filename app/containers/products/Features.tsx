@@ -26,84 +26,100 @@ const Features = () => {
             <div className='body py-6 w-full'>
               <ul className='flex flex-col'>
                 <li className='md:text-lg inline-flex py-2'>
-                  <Image
-                    src={Checkmark}
-                    width={0}
-                    height={0}
-                    alt='checkmark icon'
-                    className='w-[20px] h-auto'
-                  />
-                  Instant Photo Sharing
+                  <div className='flex gap-1'>
+                    <Image
+                      src={Checkmark}
+                      width={0}
+                      height={0}
+                      alt='checkmark icon'
+                      className='w-[20px] h-auto'
+                    />
+                    Instant Photo Sharing
+                  </div>
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
-                  <Image
-                    src={Checkmark}
-                    width={0}
-                    height={0}
-                    alt='checkmark icon'
-                    className='w-[20px] h-auto'
-                  />
-                  Custom Photo Templates
+                  <div className='flex gap-1'>
+                    <Image
+                      src={Checkmark}
+                      width={0}
+                      height={0}
+                      alt='checkmark icon'
+                      className='w-[20px] h-auto'
+                    />
+                    Custom Photo Templates
+                  </div>
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
-                  <Image
-                    src={Checkmark}
-                    width={0}
-                    height={0}
-                    alt='checkmark icon'
-                    className='w-[20px] h-auto'
-                  />
-                  GIFs and Boomerangs
+                  <div className='flex gap-1'>
+                    <Image
+                      src={Checkmark}
+                      width={0}
+                      height={0}
+                      alt='checkmark icon'
+                      className='w-[20px] h-auto'
+                    />
+                    GIFs and Boomerangs
+                  </div>
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
-                  <Image
-                    src={Checkmark}
-                    width={0}
-                    height={0}
-                    alt='checkmark icon'
-                    className='w-[20px] h-auto'
-                  />
-                  High Quality Photos
+                  <div className='flex gap-1'>
+                    <Image
+                      src={Checkmark}
+                      width={0}
+                      height={0}
+                      alt='checkmark icon'
+                      className='w-[20px] h-auto'
+                    />
+                    High Quality Photos
+                  </div>
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
-                  <Image
-                    src={Checkmark}
-                    width={0}
-                    height={0}
-                    alt='checkmark icon'
-                    className='w-[20px] h-auto'
-                  />
-                  Basic Backdrop
+                  <div className='flex gap-1'>
+                    <Image
+                      src={Checkmark}
+                      width={0}
+                      height={0}
+                      alt='checkmark icon'
+                      className='w-[20px] h-auto'
+                    />
+                    Basic Backdrop
+                  </div>
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
-                  <Image
-                    src={Checkmark}
-                    width={0}
-                    height={0}
-                    alt='checkmark icon'
-                    className='w-[20px] h-auto'
-                  />
-                  Tap to Start
+                  <div className='flex gap-1'>
+                    <Image
+                      src={Checkmark}
+                      width={0}
+                      height={0}
+                      alt='checkmark icon'
+                      className='w-[20px] h-auto'
+                    />
+                    Tap to Start
+                  </div>
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
-                  <Image
-                    src={Checkmark}
-                    width={0}
-                    height={0}
-                    alt='checkmark icon'
-                    className='w-[20px] h-auto'
-                  />
-                  Custom Props
+                  <div className='flex gap-1'>
+                    <Image
+                      src={Checkmark}
+                      width={0}
+                      height={0}
+                      alt='checkmark icon'
+                      className='w-[20px] h-auto'
+                    />
+                    Custom Props
+                  </div>
                 </li>
                 <li className='md:text-lg inline-flex py-2'>
-                  <Image
-                    src={Checkmark}
-                    width={0}
-                    height={0}
-                    alt='checkmark icon'
-                    className='w-[20px] h-auto'
-                  />
-                  Gallery Access 24hrs after event
+                  <div className='flex gap-1'>
+                    <Image
+                      src={Checkmark}
+                      width={0}
+                      height={0}
+                      alt='checkmark icon'
+                      className='w-[20px] h-auto'
+                    />
+                    Gallery Access 24hrs after event
+                  </div>
                 </li>
               </ul>
             </div>

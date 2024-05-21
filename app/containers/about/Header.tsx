@@ -17,6 +17,7 @@ const Header = () => {
             src={PBStem}
             width={200}
             height={200}
+            priority
             alt='Photo Booth with stem image'
             className='w-auto md:w-[130px] h-auto'
           />

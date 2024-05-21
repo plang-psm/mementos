@@ -25,7 +25,7 @@ const Collage = () => {
           <div className='content-center text-center'>
             <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold pb-4 md:leading-[4rem]'>
               Your{' '}
-              <span className='text-[#B4794D] font-wf lg:text-8xl'>
+              <span className='text-[#B4794D] font-wf text-5xl lg:text-7xl'>
                 Memento
               </span>{' '}
               Starts With Us

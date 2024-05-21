@@ -14,7 +14,7 @@ const CTA = () => {
       <motion.div
         initial={{ opacity: 0, y: '50px' }}
         animate={isCTARefInView ? { opacity: 1, y: '0' } : {}}
-        transition={{ duration: 3 }}
+        transition={{ duration: 1 }}
         className='CTA'
         ref={ctaRef}
       >
@@ -24,7 +24,6 @@ const CTA = () => {
             src={SquadGif}
             quality={100}
             fill
-            loading='lazy'
             className='object-cover relative z-0 w-full h-full'
           />
           <div className='content relative text-white text-center h-full content-center'>
@@ -38,7 +37,7 @@ const CTA = () => {
               }
               tab='_blank'
             >
-              Book now
+              Book Now
             </LinkButton>
           </div>
         </div>

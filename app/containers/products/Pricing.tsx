@@ -26,7 +26,7 @@ const Pricing = () => {
         <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold pb-12 md:pb-24 text-center'>
           The Perfect Prices <br />
           For The Perfect{' '}
-          <span className='text-[#B4794D] font-wf text-4xl md:text-5xl lg:text-7xl'>
+          <span className='text-[#B4794D] font-wf text-5xl lg:text-7xl'>
             Memento
           </span>
         </h2>
