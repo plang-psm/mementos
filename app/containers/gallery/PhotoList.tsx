@@ -66,7 +66,6 @@ const PhotoList = () => {
                 height={0}
                 sizes='100vw'
                 quality={100}
-                loading='lazy'
                 className='w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] object-cover lg:object-cover'
                 alt={alt}
               />
