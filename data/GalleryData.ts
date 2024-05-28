@@ -44,6 +44,46 @@ const GalleryData = [
     alt: 'Sports image',
     type: ['all', 'gatherings'],
   },
+  {
+    img: '/static/Babyshower2.png',
+    alt: 'Baby shower image',
+    type: ['all', 'gatherings'],
+  },
+  {
+    img: '/static/Birthday1.png',
+    alt: 'Birthday image',
+    type: ['all', 'gatherings','birthdays'],
+  },
+  {
+    img: '/static/Birthday2.png',
+    alt: 'Birthday image',
+    type: ['all', 'gatherings','birthdays'],
+  },
+  {
+    img: '/static/Birthday3.png',
+    alt: 'Birthday image',
+    type: ['all', 'gatherings','birthdays'],
+  },
+  {
+    img: '/static/Birthday4.png',
+    alt: 'Birthday image',
+    type: ['all', 'gatherings','birthdays'],
+  },
+  {
+    img: '/static/Birthday6.png',
+    alt: 'Birthday image',
+    type: ['all', 'gatherings','birthdays'],
+  },
+  {
+    img: '/static/Birthday7.png',
+    alt: 'Birthday image',
+    type: ['all', 'gatherings','birthdays'],
+  },
+  {
+    img: '/static/Birthday8.png',
+    alt: 'Birthday image',
+    type: ['all', 'gatherings','birthdays'],
+  },
 ];
 
 export default GalleryData;

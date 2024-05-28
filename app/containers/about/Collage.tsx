@@ -4,7 +4,8 @@ import Image from 'next/image';
 import AboutImg1 from '@/public/static/AboutImg1.png';
 import AboutImg2 from '@/public/static/AboutImg2.png';
 import AboutImg3 from '@/public/static/AboutImg3.jpg';
-import Placeholder from '@/public/static/Placeholder.png';
+import Babyshower3 from '@/public/static/Babyshower3.png';
+import Birthday5 from '@/public/static/Birthday5.png';
 import LinkButton from '@components/LinkButton';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
@@ -57,7 +58,7 @@ const Collage = () => {
               className='object-cover max-w-[400px] w-full h-[400px] mx-auto'
             />
             <Image
-              src={Placeholder}
+              src={Birthday5}
               width={0}
               height={0}
               quality={100}
@@ -73,7 +74,7 @@ const Collage = () => {
               className='object-cover object-bottom max-w-[400px] md:max-w-full h-[400px] w-full mx-auto md:col-span-2'
             />
             <Image
-              src={Placeholder}
+              src={Babyshower3}
               width={0}
               height={0}
               quality={100}
