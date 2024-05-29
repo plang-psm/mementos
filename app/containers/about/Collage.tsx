@@ -4,7 +4,7 @@ import Image from 'next/image';
 import AboutImg1 from '@/public/static/AboutImg1.png';
 import AboutImg2 from '@/public/static/AboutImg2.png';
 import AboutImg3 from '@/public/static/AboutImg3.jpg';
-import Babyshower3 from '@/public/static/Babyshower3.png';
+import Babyshower3 from '@/public/static/BabyShower3.png';
 import Birthday5 from '@/public/static/Birthday5.png';
 import LinkButton from '@components/LinkButton';
 import { motion, useInView } from 'framer-motion';
