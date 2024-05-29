@@ -42,8 +42,11 @@ const Footer = () => {
             </div>
             <div className='payments w-full text-center'>
               <LinkButton
-                href={'/'}
-                style={'font-bold text-2xl text-center pb-5 hover:text-red-600'}
+                style='py-2 px-6 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
+                href={
+                  'https://book.usesession.com/i/QXUI37JLqa/session-type/155499'
+                }
+                tab='_blank'
               >
                 Book now
               </LinkButton>
@@ -52,16 +55,16 @@ const Footer = () => {
           <div className='md:w-[30%] flex flex-col gap-12 pb-12'>
             <div className='navigation text-center md:pb-0 flex flex-col gap-8'>
               <h3 className='font-extrabold text-xl'>Menu</h3>
-              <Link href={'/'} className='hover:opacity-70 text-lg'>
+              <Link href={'/'} className='hover:font-normal text-lg'>
                 Home
               </Link>
-              <Link href={'/about'} className='hover:opacity-70 text-lg'>
+              <Link href={'/about'} className='hover:font-normal text-lg'>
                 About
               </Link>
-              <Link href={'/products'} className='hover:opacity-70 text-lg'>
+              <Link href={'/products'} className='hover:font-normal text-lg'>
                 Product
               </Link>
-              <Link href={'/gallery'} className='hover:opacity-70 text-lg'>
+              <Link href={'/gallery'} className='hover:font-normal text-lg'>
                 Gallery
               </Link>
             </div>
@@ -94,13 +97,20 @@ const Footer = () => {
               <div className=' flex gap-2 justify-center lg:justify-start content-center items-center uppercase'>
                 <FaPhoneAlt className='inline-block' size={25} />
                 <div className=''>
-                  <p className='font-thin'>(555)555-5555</p>
+                  <a className='font-thin hover:font-normal' href='55555555555'>
+                    (555)555-5555
+                  </a>
                 </div>
               </div>
               <div className=' flex gap-2 justify-center lg:justify-start content-center items-center uppercase'>
                 <FaRegEnvelope className='inline-block' size={25} />
                 <div className=''>
-                  <p className='font-thin'>Mementosbooth@gmail.com</p>
+                  <a
+                    className='font-thin hover:font-normal'
+                    href='mailto:Mementosbooth@gmail.com'
+                  >
+                    Mementosbooth@gmail.com
+                  </a>
                 </div>
               </div>
             </div>

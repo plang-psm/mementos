@@ -27,7 +27,7 @@ const ADList = ({ img, heading, desc }: MediaDataType, index: number) => {
             <div className='absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 rounded-3xl'></div>
 
             <div className='absolute max-h-[150px] md:max-w-[400px] w-full h-full bottom-0 left-0 right-0 text-white'>
-              <h2 className='font-extrabold text-lg md:text-2xl py-2 uppercase'>
+              <h2 className='font-extrabold text-3xl py-2 uppercase'>
                 {heading}
               </h2>
               <p className='px-0'>{desc} </p>

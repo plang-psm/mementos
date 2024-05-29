@@ -9,7 +9,7 @@ const AddOnData = [
   },
   {
     heading: 'Travel Fee',
-    desc: '+$30 for +20miles',
+    desc: '+$30 for +25miles',
   },
   {
     heading: 'Backdrop',

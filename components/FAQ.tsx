@@ -24,7 +24,9 @@ const FAQ = ({ question, answer }: props, index: number) => {
             onClick={() => setIsExpanded(!isExpanded)}
             className='flex justify-between cursor-pointer items-center w-full'
           >
-            <h3 className='font-bold md:text-xl tracking-wide'>{question}</h3>
+            <h3 className='font-bold md:text-xl tracking-wide text-start'>
+              {question}
+            </h3>
 
             <MdKeyboardArrowDown
               size={35}
