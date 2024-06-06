@@ -45,7 +45,7 @@ const GalleryData = [
     type: ['all', 'gatherings'],
   },
   {
-    img: '/static/Babyshower2.png',
+    img: '/static/BabyShower2.png',
     alt: 'Baby shower image',
     type: ['all', 'gatherings'],
   },
