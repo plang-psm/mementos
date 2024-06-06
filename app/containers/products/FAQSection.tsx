@@ -20,8 +20,10 @@ const FAQSection = () => {
       >
         <div className='max-w-[1200px] w-full mx-auto'>
           <div className='flex flex-col md:flex-row'>
-            <div className='w-full md:w-[40%] md:p-8 lg:p-24 text-3xl md:text-4xl'>
-              Lets clarify <br />A Few Things
+            <div className='w-full md:w-[40%] md:p-8 lg:p-24 '>
+              <h2 className='text-3xl md:text-4xl'>
+                Lets Clarify <br />A Few Things
+              </h2>
             </div>
             <div className='w-full md:w-[60%]'>
               {FaqData.map(({ question, answer }, index) => {
