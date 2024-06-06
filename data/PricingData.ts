@@ -4,17 +4,16 @@ const PricingData = [
     text: 'Easy & Affordable.',
     pricing: '250',
     time: '2',
-    link: '/',
-    favorite: false
-
+    link: 'https://book.usesession.com/i/QXUI37JLqa/session-type/155499',
+    favorite: false,
   },
   {
     title: 'Premium',
     text: 'More Time, More Fun',
     pricing: '350',
     time: '3',
-    link: '/',
-    favorite: true
+    link: 'https://book.usesession.com/i/QXUI37JLqa/session-type/155499',
+    favorite: true,
   },
 ];
 

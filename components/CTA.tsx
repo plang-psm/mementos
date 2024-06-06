@@ -18,15 +18,15 @@ const CTA = () => {
         className='CTA'
         ref={ctaRef}
       >
-        <div className='max-w-[1400px] px-6 md:px-0 h-[400px] mx-auto relative'>
+        <div className='max-w-[1400px] w-full px-6 md:px-0 h-[400px] mx-auto'>
           <Image
             alt='Header image'
             src={SquadGif}
             quality={100}
             fill
-            className='object-cover relative z-0 w-full h-full'
+            className='object-cover max-w-[1400px] mx-auto h-full'
           />
-          <div className='content relative text-white text-center h-full content-center'>
+          <div className='content relative w-full h-full flex flex-col justify-center text-white text-center content-center'>
             <h2 className='text-5xl md:text-6xl lg:text-7xl font-extrabold pb-4 [text-shadow:_0_0_80px_rgb(0_0_0_/_100%)] uppercase'>
               Capture Your Mementos <br /> With Us!
             </h2>

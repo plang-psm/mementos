@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { TfiClose } from 'react-icons/tfi';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { usePathname } from 'next/navigation';
@@ -101,6 +100,7 @@ const Navbar = () => {
               <LinkButton
                 style='py-2 px-2 lg:px-3 bg-red-600 text-white text-lg font-semibold hover:opacity-80'
                 href='https://book.usesession.com/i/QXUI37JLqa/session-type/155499'
+                tab='_blank'
               >
                 Book
               </LinkButton>
@@ -141,6 +141,7 @@ const Navbar = () => {
               <LinkButton
                 style='py-2 px-2 mt-8 lg:px-3 bg-red-600 text-white text-lg font-semibold hover:opacity-80'
                 href='https://book.usesession.com/i/QXUI37JLqa/session-type/155499'
+                tab='_blank'
               >
                 Book
               </LinkButton>
