@@ -2,13 +2,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaInstagram } from 'react-icons/fa';
-import { FaPhoneAlt } from 'react-icons/fa';
 import { FaRegClock } from 'react-icons/fa';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaRegEnvelope } from 'react-icons/fa';
-import { SiZelle } from 'react-icons/si';
-import { BiLogoVenmo } from 'react-icons/bi';
-import { SiCashapp } from 'react-icons/si';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -41,18 +37,11 @@ const Footer = () => {
               />
             </div>
             <div className='payments w-full text-center'>
-              <LinkButton
-                style='py-2 px-6 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
-                href={
-                  'https://book.usesession.com/i/QXUI37JLqa/session-type/155499'
-                }
-                tab='_blank'
-              >
-                Book now
-              </LinkButton>
+              <p className='font-extrabold text-xl'>Mementos Photo Booth</p>
+              <p className='font-normal text-xl font-'>Los Angeles, CA</p>
             </div>
           </div>
-          <div className='md:w-[30%] flex flex-col gap-12 pb-12'>
+          <div className='md:w-[20%] lg:w-[30%] flex flex-col gap-12 pb-12'>
             <div className='navigation text-center md:pb-0 flex flex-col gap-8'>
               <h3 className='font-extrabold text-xl'>Menu</h3>
               <Link href={'/'} className='hover:font-normal text-lg'>
@@ -68,38 +57,31 @@ const Footer = () => {
                 Gallery
               </Link>
             </div>
-            <div className='payments w-full'>
-              <h3 className='font-extrabold text-xl text-center pb-5'>
-                We Accept
-              </h3>
-              <div className='contact w-[200px] flex justify-between mx-auto'>
-                <div className=''>
-                  <SiZelle className='inline-block' size={35} />
-                </div>
-                <div className=''>
-                  <BiLogoVenmo className='inline-block' size={35} />
-                </div>
-                <div className=''>
-                  <SiCashapp className='inline-block' size={35} />
-                </div>
-              </div>
+            <div className='book w-full text-center'>
+              <LinkButton
+                style='py-2 px-6 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
+                href={
+                  'https://book.usesession.com/i/QXUI37JLqa/session-type/155499'
+                }
+                tab='_blank'
+              >
+                Book now
+              </LinkButton>
             </div>
           </div>
-          <div className='contact-location md:w-[30%] pb-12 md:pb-0 text-center lg:text-start'>
+          <div className='contact-location md:w-[40%] lg:w-[30%] pb-12 md:pb-0 text-center lg:text-start'>
             <div className='contact flex flex-col gap-4 pb-12'>
               <h3 className='font-extrabold text-xl'>Contact</h3>
               <div className=' flex gap-2 justify-center lg:justify-start content-center items-center uppercase'>
                 <FaInstagram className='inline-block' size={25} />
                 <div className=''>
-                  <p className='font-thin'>@Mementos</p>
-                </div>
-              </div>
-              <div className=' flex gap-2 justify-center lg:justify-start content-center items-center uppercase'>
-                <FaPhoneAlt className='inline-block' size={25} />
-                <div className=''>
-                  <a className='font-thin hover:font-normal' href='55555555555'>
-                    (555)555-5555
+                  <a
+                    className='font-thin hover:font-normal'
+                    href='https://www.instagram.com/mementosbooth/'
+                  >
+                    @Mementosbooth
                   </a>
+                  <p className='font-thin'></p>
                 </div>
               </div>
               <div className=' flex gap-2 justify-center lg:justify-start content-center items-center uppercase'>

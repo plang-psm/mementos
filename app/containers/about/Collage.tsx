@@ -35,9 +35,10 @@ const Collage = () => {
               href={
                 'https://book.usesession.com/i/QXUI37JLqa/session-type/155499'
               }
+              tab='_blank'
               style='py-2 px-6 mr-2 bg-red-600 text-white text-lg md:text-xl font-semibold hover:opacity-80'
             >
-              Book Here
+              Book Now
             </LinkButton>
           </div>
           <div className='image grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>

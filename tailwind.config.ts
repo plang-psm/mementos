@@ -9,7 +9,6 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      'sm-md': '650px',
       ...defaultTheme.screens,
     },
     fontFamily: {

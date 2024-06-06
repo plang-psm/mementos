@@ -17,9 +17,9 @@ const FAQ = ({ question, answer }: props, index: number) => {
       >
         <div className='py-4'>
           <button
-            id={`${index}-accordion-button`}
+            id={`${question}-accordion-button`}
             aria-expanded={isExpanded}
-            aria-controls={`${index}-accordion-panel`}
+            aria-controls={`${question}-accordion-panel`}
             aria-label={question}
             onClick={() => setIsExpanded(!isExpanded)}
             className='flex justify-between cursor-pointer items-center w-full'
@@ -36,8 +36,8 @@ const FAQ = ({ question, answer }: props, index: number) => {
         </div>
         {isExpanded && (
           <section
-            id={`${index}-accordion-panel`}
-            aria-labelledby={`${index}-accordion-button`}
+            id={`${answer}-accordion-panel`}
+            aria-labelledby={`${answer}-accordion-button`}
             aria-label={answer}
           >
             <p className='mt-3 mb-6 text-neutral-600 md:text-lg tracking-wide'>

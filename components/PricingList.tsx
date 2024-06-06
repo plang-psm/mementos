@@ -37,10 +37,15 @@ const PricingList = (
               {time} hours
             </p>
           </div>
-          <LinkButton href={link} aria-label={`${title} pricing link`}>
+          <LinkButton
+            href={link}
+            aria-label={`${title} pricing link`}
+            tab='_blank'
+          >
             <TfiArrowCircleRight
               size={35}
               className='mx-auto rounded-2xl'
+              aria-label={`${title} pricing link`}
             />
           </LinkButton>
         </div>

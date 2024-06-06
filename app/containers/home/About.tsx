@@ -52,8 +52,8 @@ const About = () => {
               <span className='font-extrabold'>Los Angeles, CA</span>. Our
               state-of-the-art booths are equipped with{' '}
               <span className='font-extrabold'>high-quality photos</span> and a
-              wide array of fun props, ensuring every snapshot is a moment to
-              cherish. Whether it's a{' '}
+              wide array of <span className='font-extrabold'>fun props</span>,
+              ensuring every snapshot is a moment to cherish. Whether it's a{' '}
               <span className='font-extrabold'>wedding, birthday bash,</span> or{' '}
               <span className='font-extrabold'>corporate event</span>, our
               customizable packages cater to your specific needs, complete with
