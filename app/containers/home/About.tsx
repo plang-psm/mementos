@@ -18,7 +18,7 @@ const About = () => {
             initial={{ opacity: 0, y: '50px' }}
             animate={isAboutRefInView ? { opacity: 1, y: '0' } : {}}
             transition={{ duration: 1 }}
-            className='image w-full py-12 lg:py-24 max-w-full md:order-2'
+            className='image md:mx-auto max-w-[700px] py-12 lg:py-24 md:order-2'
           >
             <Image
               src={Logo}

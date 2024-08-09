@@ -6,7 +6,7 @@ import HeaderImg1 from '@/public/static/HeaderImg1.png';
 const Hero = () => {
   return (
     <>
-      <div className='hero h-svh relative overflow-hidde'>
+      <div className='hero h-[800px] lg:h-svh relative overflow-hidde'>
         <Image
           alt='Header image'
           src={HeaderImg1}

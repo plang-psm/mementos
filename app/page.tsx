@@ -4,7 +4,6 @@ import About from '@app/containers/home/About';
 import Features from '@app/containers/home/Features';
 import CTA from '@components/CTA';
 
-
 export default function Home() {
   return (
     <>
